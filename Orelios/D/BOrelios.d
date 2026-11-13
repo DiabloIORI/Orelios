@@ -7,141 +7,141 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrelTalk","GLOBAL",1)~
 THEN Borelios OrelBant1
-~You are not from Amn, are you? I've spent enough time here to know an Amnish when I see one, and you are clearly not.~ [PM_Orelg]
+~你不是安姆人，对吧？我在此待得够久，一眼就认得出安姆人，而你显然不是。~ [PM_Orelg]
 DO ~IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-IF ~~THEN REPLY ~I'm not, no. We were brought from the the north of here, near Baldur's Gate. Imoen and I grew up in a place called Candlekeep, on the coast.~ + OrelBant1-2
-IF ~~THEN REPLY ~I can't be bothered to talk now, Orelios. Leave me be.~ + PM_OrelEx1-1
+IF ~~THEN REPLY ~不，我不是。我们是从北边来的，博德之门附近。爱蒙和我是在一个叫烛堡的海边地方长大的。~ + OrelBant1-2
+IF ~~THEN REPLY ~奥雷利奥斯，我现在没心思谈。让我静静。~ + PM_OrelEx1-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-2
-~Candlekeep? Truly?~
+~烛堡？当真？~
 END
-IF ~~ THEN REPLY ~Yes. Is that so difficult to believe?~ + OrelBant1-3
-IF ~~ THEN REPLY ~Does that bother you?~ + OrelBant1-3
+IF ~~ THEN REPLY ~是的。这有那么难以置信吗？~ + OrelBant1-3
+IF ~~ THEN REPLY ~这让你不安吗？~ + OrelBant1-3
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-3
-~No, it's simply that... Well, its a place of renown even where I'm from, but I've not heard it described as the sort of place one would raise children.~
+~不，只是……嗯，那地方连我来的地方都很有名，可我从没听人把它说成适合养孩子的地方。~
 END
-IF ~~ THEN REPLY ~I came to grow fond of the place, and its people. I felt I had family there, though we were not blood.~ + OrelBant1-5
-IF ~~ THEN REPLY ~It was unusual, yes, but our guardian did as well as he could given the circumstances.~ + OrelBant1-4
-IF ~~ THEN REPLY ~Had I a choice, I would have lived somewhere less stifling. But I made do.~  + OrelBant1-6
+IF ~~ THEN REPLY ~我后来渐渐喜欢上了那地方，还有那里的人。我在那儿觉得有家人，虽然我们并无血缘。~ + OrelBant1-5
+IF ~~ THEN REPLY ~那确实不寻常，是的，但我们的监护人已尽力而为了。~ + OrelBant1-4
+IF ~~ THEN REPLY ~若我有选择，我会住在没那么憋闷的地方。但我将就了。~  + OrelBant1-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-4
-~I imagine how one might have to adapt to such an environment. We all do our best to provide idyllic home lives for our loved ones, but oftentimes you must accomplish what you can with what you have. I know this well enough.~
+~我能想象人得怎样适应那样的环境。我们都尽力为所爱之人营造安适的家，可往往只能用手里有的东西尽量去做。这点我很清楚。~
 END
-IF ~~ THEN REPLY ~You had a family in Aglarond?~ + OrelBant1-7
-IF ~~ THEN REPLY ~Terribly sorry to interrupt, but we have more pressing matters than reminiscence to attend to.~ + PM_OrelEx1-1
+IF ~~ THEN REPLY ~你在阿格拉隆德有家人？~ + OrelBant1-7
+IF ~~ THEN REPLY ~实在抱歉打断，可我们有比追忆更要紧的事。~ + PM_OrelEx1-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-5
-~Ah, it must not have been easy to leave it behind, then. It was many years before I could leave my own family for the road, in good conscience.~
+~啊，那要离开他们想必不容易。我是过了许多年，才问心无愧地离开家人上路的。~
 END
-IF ~~ THEN REPLY ~You left your family for adventure?~ + OrelBant1-A
-IF ~~ THEN REPLY ~We have more important things to focus on. We'll talk later.~ EXIT
+IF ~~ THEN REPLY ~你为了冒险离开家人？~ + OrelBant1-A
+IF ~~ THEN REPLY ~我们有更要紧的事要办。以后再谈。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-6
-~Ah, I should have figured you for a hellion. I hope you did not give your elders too much grief.~
+~啊，我早该看出你是个捣蛋鬼。希望你没给长辈太多苦头。~
 END
-IF ~~ THEN REPLY ~Only as much as they asked for. You cannot imagine how stifling it was to be locked in that place with such single-minded people.~ + OrelBant1-B
-IF ~~ THEN REPLY ~It was not all that bad, honestly. Imoen and I were the only children, we were given leeway to be as such.~ + OrelBant1-C
+IF ~~ THEN REPLY ~只给了他们要的那些。你想象不到，跟那么多心思单一的人一起关在那地方有多憋闷。~ + OrelBant1-B
+IF ~~ THEN REPLY ~说实话，也没那么糟。爱蒙和我是那儿仅有的孩子，大人给我们留了做孩子的余地。~ + OrelBant1-C
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-7
-~I did. I have twin daughters in Aglarond, both grown now. With their father in the barracks and their mother in the temple of Rillifane they did not have what one could call a typical childhood.~
-= ~But as you said, we did the best that we could. It is all you can do.~
+~是的。我在阿格拉隆德有一对双胞胎女儿，如今都长大了。父亲在营房，母亲在里利凡的神殿，她们的童年算不上寻常。~
+= ~但如你所说，我们已经尽力。人只能做到这些。~
 END
-IF ~~ THEN REPLY ~I wonder, sometimes, about how things might have been different, how I might have been different.~ + OrelBant1-8
-IF ~~ THEN REPLY ~I do not blame Gorion. He is not responsible for any of my troubles. He did only what he thought right.~ + OrelBant1-9
+IF ~~ THEN REPLY ~有时我会想，事情本可以是另一番样子，我本可以是另一番人。~ + OrelBant1-8
+IF ~~ THEN REPLY ~我不怪葛立安。我的麻烦不怪他。他只做了他认为对的事。~ + OrelBant1-9
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-8
-~It might be tempting to do so, but there is no escaping the past in wondering what could have been.~
-= ~Besides, if a <PRO_MANWOMAN> such as yourself is any indication, one does not require an idyllic beginning to excel later in life. I have been with you a short time and even I can recognize it.~
+~那样想也许很诱人，可追想“本可以如何”也逃不开过去。~
+= ~再说，若像你这样的<PRO_MANWOMAN>能作例证，那就是说人不必有安适的起点也能在日后出类拔萃。我跟你相处不久，连我也看得出来。~
 END
-IF ~~ THEN REPLY ~I appreciate the sentiment, but this life has not been without its hardships.~ + PM_OrelEx1-2
+IF ~~ THEN REPLY ~我领会你的好意，可这生活并非没有艰难。~ + PM_OrelEx1-2
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-9
-~It is good that you harbor no bitterness. Regrets will serve only to weaken you and your resolve going forward.~
+~你不怀怨怼，这很好。悔恨只会削弱你，削弱你往前的决心。~
 END
-IF ~~ THEN REPLY ~You have no regrets?~ + PM_OrelEx1-3
+IF ~~ THEN REPLY ~你没有悔恨？~ + PM_OrelEx1-3
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-A
-~Not in a callous way. I only left Aglarond when my children were grown. I imagine your departure was much harder.~
+~不是无情的那种。我直到孩子长大才离开阿格拉隆德。我想你的离开要难得多。~
 END
-IF ~~ THEN REPLY ~How did they feel about your departure?~ + OrelBant1-D
-IF ~~ THEN REPLY ~I have coped well enough, though the kidnapping of Imoen has stung me.~ +PM_OrelEx1-4
+IF ~~ THEN REPLY ~他们对你离开怎么看？~ + OrelBant1-D
+IF ~~ THEN REPLY ~我应付得还好，只是爱蒙被绑这事刺痛了我。~ +PM_OrelEx1-4
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-B
-~I have lived among military men and women, so I am no stranger to rigid order. But I suppose it suits me.~
-= ~For a child, however, I can see how that would be suffocating to the spirit. I tried to spare my daughters the colder aspects of an regimented life.~
+~我一直在军人中间生活，所以对严苛的秩序不陌生。不过我想它合我的性子。~
+= ~可对孩子来说，我看得出那会怎样压抑心气。我尽量让女儿们避开军旅生活里较冷硬的那些方面。~
 END
-IF ~~ THEN REPLY ~And how did that turn out?~ GOTO PM_OrelEx1-5
+IF ~~ THEN REPLY ~那结果如何？~ GOTO PM_OrelEx1-5
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-C
-~Oh? That is good. For all my love of structure, I recognized the necessity of freedom in youth. I owed leniency to my children.~
+~哦？那很好。尽管我喜爱章法，我也明白少年时需要自由。我亏欠孩子们一份宽纵。~
 END
-IF ~~ THEN REPLY ~Did that turned out as well as you'd hoped?~ + PM_OrelEx1-5
-IF ~~ THEN REPLY ~No offense meant, Orelios, but I somehow don't see you as the gentle caregiving type.~ + PM_OrelEx1-6
+IF ~~ THEN REPLY ~结果如你所愿吗？~ + PM_OrelEx1-5
+IF ~~ THEN REPLY ~无意冒犯，奥雷利奥斯，可我总觉得你不像那种温厚顾家的人。~ + PM_OrelEx1-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant1-D
-~It did not hurt them, if that's what you're getting at. My partner Sylmae has her work in the church of Rillifane, and our daughters have their own lives now, apart from mine.~
-= ~It was not easy to leave, but they are fine without me.~
+~那没伤到她们，如果你是这个意思。我的伴侣希尔梅在里利凡的神殿做事，我们的女儿如今各有各的生活，已不在我身边。~
+= ~离开并不容易，可没有我也过得很好。~
 END
-IF ~~ THEN REPLY ~I find it hard to believe they didn't object to your travel plans, to be honest.~ + PM_OrelEx1-7
+IF ~~ THEN REPLY ~说实话，我很难相信他们没反对你的出行打算。~ + PM_OrelEx1-7
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-1
-~Understood. Let us continue on, then.~
+~明白了。那我们继续吧。~
 END
-IF ~~ THEN REPLY ~Let's.~ EXIT
+IF ~~ THEN REPLY ~走吧。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-2
-~Certainly, but you have met them capably, and are better for them. Come, let us continue on our path.~
+~当然，可你应对得很好，也因此更好。来，我们继续上路。~
 END
-IF ~~ THEN REPLY ~Let's go.~ EXIT
+IF ~~ THEN REPLY ~走吧。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-3
-~I did, once. At a certain point in your life, you have to let go of them. But we have tarried too long, we should continue later.~
+~我确实有过。人生到某个阶段，你就得放手。不过我们耽搁太久了，以后再谈。~
 END
-IF ~~ THEN REPLY ~Sure.~ EXIT
+IF ~~ THEN REPLY ~好。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-4
-~Then we shall endeavor even harder for her freedom. Let's continue on.~
+~那我们就为她的自由更加努力。继续走吧。~
 END
-IF ~~ THEN REPLY ~Very well.~ EXIT
+IF ~~ THEN REPLY ~很好。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-5
-~Quite well, in fact. My daughters are independent and happy, or at least they have always seemed so.~
-= ~But that is entirely too much chit-chat for one day. We should focus on the task at hand.~
+~事实上相当好。我的女儿们独立又快乐，至少她们一向如此。~
+= ~可这一天的闲话实在太多了。我们该专心手头的事。~
 END
-IF ~~ THEN REPLY ~Indeed. We'll talk more later.~ EXIT
+IF ~~ THEN REPLY ~确实。以后再谈。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-6
-~None taken, and I can assure you that even the most severe warrior's heart is warmed in the presence of his children. I strive to keep remembrance of what they have taught me.~
-= ~Ah, we have tarried to long on this idle chatter. We have work to do, let's get to it.~
+~无意冒犯也不妨，我可以向你保证，再严酷的战士，在孩子面前心也是暖的。我努力记着她们教给我的东西。~
+= ~啊，我们在这闲话上耽搁太久了。有活要干，动手吧。~
 END
-IF ~~ THEN REPLY ~Indeed. We'll talk more later.~ EXIT
+IF ~~ THEN REPLY ~确实。以后再谈。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx1-7
-~They may have been sad to see me go, but they understand me, and what drives me. I have fulfilled my duties to them and now I am on a mission of self. It is this way because it must be.~
-= ~But we have talked enough, for now. Dwelling on my home will bring melancholy and that would be a disservice to your mission.~
+~他们也许难过，可他们懂我，也懂是什么驱使我。我对他们尽了责，如今我在走自己的路。事情只能如此。~
+= ~不过我们谈够了。老想着家乡会招来愁绪，那对你的事没有好处。~
 END
-IF ~~ THEN REPLY ~Alright then. We're off.~ EXIT
+IF ~~ THEN REPLY ~好吧。我们走。~ EXIT
 
 CHAIN
 IF ~InParty("PMOrel")
@@ -150,149 +150,149 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrelTalk","GLOBAL",2)~
 THEN Borelios OrelBant2
-~I would like to know more about this Imoen, if you do not mind speaking of her.~[PM_Orelx]
+~若不介意谈她，我想多了解这位爱蒙。~[PM_Orelx]
 DO ~IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-IF ~~ THEN REPLY ~We grew up together in Candlekeep. She was a surrogate sister, and a great friend.~ + OrelBant2-1
-IF ~~ THEN REPLY ~Imoen and I were the only children within Candlekeep. She was into mischief more often than not, but she made the place easier to bear.~ + OrelBant2-1
-IF ~~ THEN REPLY ~She was annoying creature. I forget why I ever accepted her company.~ + OrelBant2-2
-IF ~~ THEN REPLY ~I do mind. Leave me be, Orelios.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~我们一起在烛堡长大。她像我的姐妹，也是极好的朋友。~ + OrelBant2-1
+IF ~~ THEN REPLY ~爱蒙和我是烛堡里仅有的孩子。她多半时候都在捣乱，可她让那地方好过些。~ + OrelBant2-1
+IF ~~ THEN REPLY ~她是个讨人烦的东西。我都忘了当初为什么容她做伴。~ + OrelBant2-2
+IF ~~ THEN REPLY ~我介意。让我静静，奥雷利奥斯。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-1
-~Hmm, yes. How did you end up on the road as adventurers, then? Did Candlekeep prove too small to hold you?~
+~嗯，好。那你们后来怎么成了上路冒险的人？是烛堡容不下你们吗？~
 END
-IF ~~ THEN REPLY ~It did, but there were other factors. Our foster father Gorion took me away to keep me safe, but to no avail.~ + OrelBant2-3
-IF ~~ THEN REPLY ~My foster father kept me in that place to save me from the power of my lineage. Fate had other plans.~ + OrelBant2-5
-IF ~~ THEN REPLY ~It was an accident of sorts. We departed the keep but Gorion, our guardian, was killed. Our ability to return died with him. We had no choice.~ + OrelBant2-4
+IF ~~ THEN REPLY ~是容不下，可还有别的原因。我们的养父葛立安带我走，是为了保我平安，可没能成。~ + OrelBant2-3
+IF ~~ THEN REPLY ~我的养父把我留在那地方，是为了让我避开我血脉中的力量。命运另有安排。~ + OrelBant2-5
+IF ~~ THEN REPLY ~那算是场意外。我们离了堡，可我们的监护人葛立安被杀。我们回去的可能也随他死了。我们别无选择。~ + OrelBant2-4
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-2
-~Surely she must have been some use to you, if she managed up until your arrival in Amn.~
+~既然她能撑到你们到安姆，她对你总该有些用处。~
 END
-IF ~~ THEN REPLY ~She was a halfway decent thief until she decided to try her hand at magic. She wasn't the best at anything, but she was useful I suppose.~ + OrelBant2-G
+IF ~~ THEN REPLY ~在她决定试手魔法之前，她算个过得去的盗贼。她什么都不算最好，但我想她有用。~ + OrelBant2-G
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-3
-~To keep you safe from what? What happened?~
+~保你避开什么？发生了什么？~
 END
-IF ~~ THEN REPLY ~We were accosted by a murderous band led by a man named Sarevok, my brother, who sought the power in our lineage. He killed Gorion to get to me, but I escaped.~ + OrelBant2-5
-IF ~~ THEN REPLY ~It is a sensitive subject. You must promise not to speak of this to anyone.~ + OrelBant2-6
-IF ~~ THEN REPLY ~I do not wish to speak of it. We must end this conversation.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~我们被一伙凶手拦劫，领头的叫萨瑞沃克，是我的兄长，他觊觎我们血脉中的力量。他杀了葛立安来取我，可我逃了。~ + OrelBant2-5
+IF ~~ THEN REPLY ~这是个敏感话题。你必须答应不向任何人提。~ + OrelBant2-6
+IF ~~ THEN REPLY ~我不想谈这个。我们得结束这场对话。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-4
-~That does not sound like an accident to my ears. From your tone I take it this was not simple happenstance.~
+~在我听来，那不像意外。从你的语气看，这不是单纯的偶然。~
 END
-IF ~~ THEN REPLY ~It wasn't. Gorion sought to safeguard me on our journey, but he failed.~ + OrelBant2-3
+IF ~~ THEN REPLY ~不是。葛立安想在旅途中护我，可他失败了。~ + OrelBant2-3
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-5
-~"Power of my lineage"? I don't understand...~
+~“我血脉中的力量”？我不明白……~
 END
-IF ~~ THEN REPLY ~I will explain this to you, but you must swear to keep this knowledge secret.~ + OrelBant2-6
-IF ~~ THEN REPLY ~Gorion was killed by my brother, who sought to kill me in order to claim the power of our father, Bhaal.~ + OrelBant2-7
-IF ~~ THEN REPLY ~Forget I said anything. Let's just keep walking.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~我会向你解释，可你必须发誓保守这秘密。~ + OrelBant2-6
+IF ~~ THEN REPLY ~葛立安被我兄长所杀，他要杀我，是为了承继我们父亲巴尔的力量。~ + OrelBant2-7
+IF ~~ THEN REPLY ~当我什么都没说。我们继续走吧。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~
 THEN Borelios OrelBant2-6
-~You have my word. Tell me.~
+~我向你保证。告诉我。~
 DO ~SetGlobal("PMBloodPromise","GLOBAL",1)~
 END
-IF ~~ THEN REPLY ~Gorion was killed by my brother, who sought to kill me in order to claim the power of our father, Bhaal.~ + OrelBant2-7
+IF ~~ THEN REPLY ~葛立安被我兄长所杀，他要杀我，是为了承继我们父亲巴尔的力量。~ + OrelBant2-7
 
 CHAIN
 IF
 ~~
 THEN Borelios OrelBant2-7
-~"The Lord of Murder shall perish, but in his doom he shall spawn a score of mortal progeny, chaos will be sown by their passage." So Alaundo's prophecy has come to fruition.~
-= ~I am not sure of what to say.~
+~“杀戮之主终将殒灭，但其劫数之中将诞下二十个凡胎子嗣，混乱将随其行迹播撒。”看来阿劳多之预言已成真。~
+= ~我不知道该说什么。~
 DO ~SetGlobal("PM_Bhaalspawn","GLOBAL",1)~
 END
-IF ~~ THEN REPLY ~It sounds bad, I know. But believe me when I say I'm doing my damnedest to make right of this.~ + OrelBant2-8
-IF ~~ THEN REPLY ~Hey, neither am I! I'm just trying to keep my head down. I didn't ask for this.~ + OrelBant2-9
-IF ~~ THEN REPLY ~What's to be said? I have been given a spectacular opportunity. Great power awaits me.~ + OrelBant2-0
-IF ~~ THEN REPLY ~There's nothing to say. We're done here.~ EXIT
+IF ~~ THEN REPLY ~我知道这听着糟。但请信我，我正拼了命把这事扶正。~ + OrelBant2-8
+IF ~~ THEN REPLY ~嘿，我也一样！我只想着低头过日子。这不是我要的。~ + OrelBant2-9
+IF ~~ THEN REPLY ~有什么好说的？我得到了一个惊天的机会。强大的力量在等我。~ + OrelBant2-0
+IF ~~ THEN REPLY ~没什么好说的。我们到此为止。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-8
-~In that case, I will do my best to assist you. I must think on this for awhile. Thank you for being candid with me.~
+~既如此，我会尽力助你。这事我得想一阵。谢谢你坦率相告。~
 END
-IF ~~ THEN REPLY ~We'll talk more later.~ EXIT
+IF ~~ THEN REPLY ~以后再谈。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-9
-~If what Alaundo wrote is true, then that will not be possible. One of your kin has come for your blood, there will surely be more.~
-= ~You will have to see this through to whatever end it comes to.~
+~若阿劳多所写属实，那就不可能了。你的血亲已来取你的血，往后必然还有。~
+= ~你得把这事走到它的尽头，无论那是什么。~
 END
-IF ~~ THEN REPLY ~I can hope, can't I?~ + OrelBant2-A
-IF ~~ THEN REPLY ~I suppose you're right. I am not sure I'll have the power to do so.~ + OrelBant2-B
+IF ~~ THEN REPLY ~我总还能抱着希望，不是吗？~ + OrelBant2-A
+IF ~~ THEN REPLY ~我想你说得对。我不确定自己有没有那份力量。~ + OrelBant2-B
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-0
-~Tread carefully. I doubt Bhaal would have planned this far ahead only to leave his power to be usurped by a mortal.~
+~小心行事。我不信巴尔布下这么远的局，只为把力量留给一个凡人去篡夺。~
 END
-IF ~~ THEN REPLY ~Who's to say that? Who's to say Bhaal wasn't just a mindless hedonist?~ + OrelBant2-C
-IF ~~ THEN REPLY ~Oh, I intend to. But make no mistake, I am more than capable of meeting whatever challenges lay before me.~ + OrelBant2-D
+IF ~~ THEN REPLY ~谁说得准？谁说得准巴尔不是个没脑子的享乐之徒？~ + OrelBant2-C
+IF ~~ THEN REPLY ~哦，我当然要。可别弄错，我完全有能力应付前面的一切挑战。~ + OrelBant2-D
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-A
-~Doubtful. We are dealing with the will of Gods, here. But if it will allay your fears, I will be at your side to help you.~
+~难说。我们面对的是诸神的意志。但若这能安你的心，我会在你身边帮你。~
 END
-IF ~~ THEN REPLY ~Ah, fine. Into the fray, then.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~唉，好吧。那就入局吧。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-B
-~You've made it this far, haven't you? Have some faith. If not for yourself, then for your friends.~
+~你毕竟走到了这一步，不是吗？有点信心。就算不为你自己，也为你朋友。~
 END
-IF ~~ THEN REPLY ~Well, when you put it that way... I might as well try. Lead on.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~嗯，你这么说……那我就试试。带路吧。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-C
-~Those flush with power will seek ways to retain it, and the Gods are ever scheming.~
+~掌权者会设法保权，而诸神永远在谋划。~
 END
-IF ~~ THEN REPLY ~And yet he has already lost his power - Bhaal is dead now, his domain passed to Cyric.~ + OrelBant2-F
+IF ~~ THEN REPLY ~可他已经失了力量——巴尔如今死了，他的领域归了塞瑞克。~ + OrelBant2-F
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-D
-~Maybe so, but I would not be so overly confident. Hubris has felled those even greater than you, your father among them.~
+~也许吧，可我不会那么自负。骄横曾打倒比你更强的人，你父亲就在其中。~
 END
-IF ~~ THEN REPLY ~Fair enough, but you'll see that I'm right, in time.~ + PM_OrelEx2-2
-IF ~~ THEN REPLY ~Hmph, you should have more faith. I am close, I can feel it.~ + PM_OrelEx2-2
+IF ~~ THEN REPLY ~好吧，可你迟早会看到我是对的。~ + PM_OrelEx2-2
+IF ~~ THEN REPLY ~哼，你该多点信心。我就要成了，我感觉得到。~ + PM_OrelEx2-2
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-E
-~The Realms are rife with nigh-unbelievable things. Try me.~
+~诸界满是几乎不可信的事。说来听听。~
 END
-IF ~~ THEN REPLY ~I will explain this to you, but you must swear to keep this knowledge secret.~ + OrelBant2-6
-IF ~~ THEN REPLY ~Gorion was killed by my brother, who sought to kill me in order to claim the power of our father, Bhaal.~ + OrelBant2-7
-IF ~~ THEN REPLY ~Forget I said anything. Let's just keep walking.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~我会向你解释，可你必须发誓保守这秘密。~ + OrelBant2-6
+IF ~~ THEN REPLY ~葛立安被我兄长所杀，他要杀我，是为了承继我们父亲巴尔的力量。~ + OrelBant2-7
+IF ~~ THEN REPLY ~当我什么都没说。我们继续走吧。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-F
-~We must be wary of Cyric, then. Realize that all I'm saying is that, your lineage being what it is, we should be careful. We are bound to attract the attention of beings far greater than ourselves.~
+~那我们就得提防塞瑞克。要明白，我说的只是：你的血脉如此，我们该小心。我们必然会引来远超我们的存在的注意。~
 END
-IF ~~ THEN REPLY ~You worry entirely too much. Stick with me, Orelios. We shall best all comers.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~你操心太多了。跟着我，奥雷利奥斯。我们会胜过所有来者。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant2-G
-~Hmn, you ought to be more appreciative of others' talents. I doubt you could have accomplished alone what you have with others.~
+~嗯，你该更看重别人的本事。我怀疑你独自一人做不到你与人合力做到的事。~
 END
-IF ~~ THEN REPLY ~You seem to always doubt me. I will show you, one day, provided you're here to see it.~ + OrelBant2-D
-IF ~~ THEN REPLY ~I tire of your wordiness. Begone from my vicinity.~ + PM_OrelEx2-1
+IF ~~ THEN REPLY ~你似乎总在怀疑我。总有一天我会让你看到，只要你在场。~ + OrelBant2-D
+IF ~~ THEN REPLY ~你话太多了，我腻了。离我远点。~ + PM_OrelEx2-1
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx2-1
-~As you would have it.~
+~随你。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx2-2
-~Perhaps. We have argued enough, we should continue our journey.~
+~也许吧。我们争够了，该继续上路。~
 END
-IF ~~ THEN REPLY ~After you.~ EXIT
+IF ~~ THEN REPLY ~你先请。~ EXIT
 
 CHAIN
 IF ~InParty("PMOrel")
@@ -301,214 +301,214 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrelTalk","GLOBAL",3)~
 THEN Borelios OrelBant3
-~So, your brother, the one who killed Gorion and sent you on the run... You said his name was Sarevok?~
+~那么，你那兄长，杀了葛立安、逼你逃亡的那个……你说他叫萨瑞沃克？~
 DO ~IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-++ ~Yes, what of it?~ + OrelBant3-2
-++ ~I don't really want to talk about him right now, Orelios.~ + PM_OrelEx3-1
+++ ~是，怎么了？~ + OrelBant3-2
+++ ~奥雷利奥斯，我现在不太想谈他。~ + PM_OrelEx3-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-2
-~I have been mulling over that name since you spoke of him, before. It stuck in my mind and I have only just discerned the reason.~
+~自你先前提起，我一直在琢磨这名字。它留在我心里，我刚刚才辨出缘由。~
 END
-++ ~What reason would that be?~ + OrelBant3-3
-++ ~Let me guess. You met him in your travels once.~ + OrelBant3-4
+++ ~什么缘由？~ + OrelBant3-3
+++ ~让我猜。你旅途中碰见过他一次。~ + OrelBant3-4
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-3
-~I remember now, there was much commotion over the arrival of a man with such a name within the merchant community in Baldur's Gate, when I was travelling through some months ago. I hadn't thought it to be the same man.~
+~我想起来了，几个月前我路过时，博德之门的商人圈里为一位如此姓氏之人到来闹得沸沸扬扬。我当时没想到是同一个人。~
 END
-++ ~Wait just a minute, you were in Baldur's Gate? Why didn't you tell me this before?~ + OrelBant3-5
-++ ~Aye, he came to prominence in a group called the Iron Throne. Originally they were a merchant conglomerate, given to violent and treacherous means to further their goals. Sarevok bent them to his own will.~ + OrelBant3-7
-++ ~Surely you must have heard of me, as well. I foiled Sarevok's schemes and killed him, to much fanfare.~ + OrelBant3-6
-++ ~Yes, that's fascinating. Can we please focus on the task at hand?~ + PM_OrelEx3-1
+++ ~等等，你去过博德之门？为什么先前不告诉我？~ + OrelBant3-5
+++ ~是的，他是在一个叫铁王座的组织里发迹的。那组织原是商人联合体，惯用暴力和欺诈达成目的。萨瑞沃克把他们扭成了自己的意志。~ + OrelBant3-7
+++ ~你必定也听说过我。我挫败了萨瑞沃克的图谋，杀了他，颇受传颂。~ + OrelBant3-6
+++ ~是，那真有意思。我们能不能专心手头的事？~ + PM_OrelEx3-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-4
-~That is not the case, at least to my knowledge. The name came up at some point during a stay in Baldur's Gate. He was the subject of admiring gossip, as I recall.~
+~并非如此，至少据我所知。这名字是某次逗留博德之门时听来的。我记得他是被人仰慕地议论的对象。~
 END
-++ ~Why would you wait this long to tell me you had visited Baldur's Gate? Did I not tell you of my history there?~ + OrelBant3-5
-++ ~What did you hear of him?~ + OrelBant3-7
-++ ~Have you heard of me in the same way? My exploits in the region were of some renown.~ + OrelBant3-6
-++ ~I hate to cut this short, but we have more pressing matters to attend to than reminiscing over my dead brother.~ + PM_OrelEx3-1
+++ ~你为什么拖这么久才告诉我你去过博德之门？我没跟你说过我在那儿的事吗？~ + OrelBant3-5
+++ ~你听说他什么？~ + OrelBant3-7
+++ ~你也这样听说过我吗？我在那一带的作为颇有名声。~ + OrelBant3-6
+++ ~我不想打断，可我们有比追忆我死去的兄长更要紧的事。~ + PM_OrelEx3-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-5
-~Would you be so quick to accuse me of treachery? I have been to many places, <CHARNAME>. I stayed in Baldur's Gate for a time, after a... mishap I had suffered on the road. It is a large and metropolitan city, as you well know. I found it a suitable place to recuperate.~
+~你就这么急着指我背信？我去过许多地方，<CHARNAME>。我在路上遭了场……意外，之后在博德之门待了一阵。那是座大都会，你知道的。我觉得那地方适合养伤。~
 END
-++ ~Oh? What sort of mishap did you encounter?~ + OrelBant3-8
-++ ~I find it quite convenient that you would be there during my first days an adventurer and also here, now.~ + OrelBant3-9
+++ ~哦？你遭遇了什么意外？~ + OrelBant3-8
+++ ~我觉得很巧：你做冒险者最初的日子你在那儿，如今又在这儿。~ + OrelBant3-9
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-6
-~Not that I can remember. I must have left the city after your triumphs, if it is as you say.~
+~我不记得有这回事。若如你所说，我必是在你扬名之后才离城。~
 END
-++ ~What were you doing in Baldur's Gate, exactly?~ + OrelBant3-8
-++ ~Sorry to disappoint you but I think it's best if we left this conversation for another time.~ + PM_OrelEx3-2
+++ ~你到底在博德之门做什么？~ + OrelBant3-8
+++ ~抱歉让你失望，不过我想这谈话最好改日再说。~ + PM_OrelEx3-2
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-7
-~As I said, there was much talk of him when I arrived in the city. Quite charismatic, by the sound of it, and ambitious.~
+~如我所说，我到城里时关于他的议论很多。听来颇有魅力，也有野心。~
 END
-++ ~He lusted after the power of our father, and he used the extensive clout of the Iron Throne to manufacture a conflict between Baldur's Gate and Amn, so as to prove himself worthy of it. Luckily for the Sword Coast, I stopped him before that could happen.~ + OrelBant3-10
+++ ~他觊觎我们父亲的力量，并用铁王座广大的势力挑起博德之门与安姆的冲突，以证明自己配得上那份力量。剑湾运气好，我在那之前拦住了他。~ + OrelBant3-10
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-8
-~It is a, ah, long story. I will tell it all, if you wish to hear.~
+~那是个，呃，很长的故事。你若想听，我可以全讲。~
 END
-++ ~By all means, go ahead.~ + OrelBant3-11
-++ ~Can you give me a short version?~  +OrelBant3-12
-++ ~No, that's quite alright. It is the present that matters, not the past. Let's not tarry further.~ + PM_OrelEx3-2
+++ ~请尽管讲。~ + OrelBant3-11
+++ ~能给我个短版本吗？~  +OrelBant3-12
+++ ~不，那就不必了。要紧的是当下，不是过去。我们别再耽搁。~ + PM_OrelEx3-2
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-9
-~Is it so hard to fathom? I'm sure there are hundreds of people who have traced your path, in a roundabout way, for reasons that have nothing to do with you or your past. It was happenstance and nothing more. I'll tell you why I was in Baldur's Gate, if it will help calm your nerves.~
+~这有那么难懂吗？我确信有成百上千的人绕弯子走过你的路，缘由与你或你的过去毫无关系。那只是偶然，仅此而已。若这能让你安心，我可以告诉你我为何在博德之门。~
 END
-++ ~Okay, let's hear it.~ + OrelBant3-11
-++ ~Quickly, please. My time is precious.~ + OrelBant3-12
-++ ~Forget it, we've better things to worry about.~ + PM_OrelEx3-1
+++ ~好，说吧。~ + OrelBant3-11
+++ ~请快些。我的时间宝贵。~ + OrelBant3-12
+++ ~算了，我们有更要紧的事要操心。~ + PM_OrelEx3-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-10
-~Indeed? I do recall the cryers announcing that war had been narrowly averted. Impressive work by any measure, friend. You saved many thousands of lives.~
+~当真？我确实记得号手宣布战争险险被避免。无论怎么衡量都是了不起的功业，朋友。你救了成千上万条命。~
 END
-++ ~I did what I had to do. So why were you in Baldur's Gate, then? Tell me that.~ + OrelBant3-8
-++ ~Eh, it was much more exciting in the doing than in the basking afterwards. I'm glad to be out and about again. What of you? What brought you to Baldur's Gate?~ + OrelBant3-8
+++ ~我做了我必须做的。那你为什么在博德之门？说说。~ + OrelBant3-8
+++ ~唉，做的时候比事后回味刺激多了。我很高兴又能四处走动。你呢？什么把你带到博德之门？~ + OrelBant3-8
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-11
-~As you know, I come from Aglarond, originally, far to the east. I had chartered a ship from Aglarond to Sembia, and from there moved on foot through Cormyr, and then through the Fields of the Dead, hoping to make my way to the Sword Coast.~
-= ~I was making my way along the Chionthar, a good day's walk to the east of Baldur's Gate, I would wager, when I came across a young man on the side of the road, clutching his leg. He called for help and beckoned me, but it wouldn't have taken a sage to figure something was amiss.~
+~如你所知，我原籍阿格拉隆德，远在东方。我从阿格拉隆德雇船到森比亚，再从那里徒步穿过科米尔，然后穿过亡者之野，希望走到剑湾。~
+= ~我沿着琴西尔河走，离博德之门约还有一天脚程——我敢打赌——那时我在路边遇到一个抱着腿的年轻人。他呼救、招手叫我，可要看出不对，并不需要什么智者。~
 END
-++ ~How could you be so sure that it was not a person in genuine need?~ + OrelBant3-14
-++ ~Bandits are not known for having a great variety of tricks.~ + OrelBant3-13
-++ ~Ah, the old bait-and-switch. Had a bit of fun, did you?~ + OrelBant3-13
+++ ~你怎么能确定他不是真需要帮助的人？~ + OrelBant3-14
+++ ~强盗可不以花招繁多著称。~ + OrelBant3-13
+++ ~啊，老一套的诱敌之策。你玩得开心吗？~ + OrelBant3-13
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-12
-~On the way to the Sword Coast from Aglarond I was accosted by bandits, and though I escaped unscathed I lost an object of great importance to me, a keepsake from the mother of my children. It was a matter of a few weeks before I could track down the culprits, but I retrieved what was mine. It was during this time that I heard of Sarevok and the iron shortage.~
+~从阿格拉隆德往剑湾的路上，我遭了强盗，我虽毫发无伤地脱身，却丢了一件对我极重要的东西——我孩子母亲的纪念物。我花了几周才追到那些贼，但把我的一切取了回来。就在那段时间，我听说了萨瑞沃克与铁荒。~
 END
-++ ~They are connected, as you may know. Sarevok tainted the nearby iron mines with alchemy to instill mutual suspicion between Baldur's Gate and Amn.~ + OrelBant3-15
-++ ~You've come along way, Orelios. Let's get going, we're holding up the party with this chatter.~ + PM_OrelEx3-1
+++ ~如你所知，这两件事有关联。萨瑞沃克用炼金术污染附近的铁矿，让博德之门与安姆互生疑忌。~ + OrelBant3-15
+++ ~奥雷利奥斯，你走得真远。我们走吧，这闲话拖住队伍了。~ + PM_OrelEx3-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-13
-~I knew what lay in store - the man was on the south side of the road, which was flanked on the north by tall grasses, high enough to hide a humanoid figure. I ignored the man and continued walking, hoping that his fellows had not thought to cover the road ahead. Sure enough, a larger figure, some half-breed ogre, slipped out of the grass ahead of me, gripping an axe. The faker pursued behind me some ways away.~
-= ~There were only the two of them. That was my saving grace - as a man with only a satchel of supplies on his person, I seemed an easy target. They allowed themselves to get sloppy.~
-= ~The ogre was easy enough to dispatch. One dodged swing and I was able to land a well-placed strike to the sternum. You strike just the right spot with your palm at just the right angle and you can knock the air right out of an opponent and still the lungs for awhile. Not a killing blow, but a chance to get a fight off on the right footing.~
-= ~The "injured" man was already upon me at this point, much to my chagrin. I was unable to sidestep his charge, and he caught me in the side with his dagger. We wrestled, I pulled the knife from my side and became surprised at my own strength as the blade bent and fractured with a twist of my hand.~
+~我知道等着我的是什么——那人待在路南侧，路北是长得足以藏住人形的高草。我不理那人继续走，盼着他的同伙没想到去堵前面的路。果然，一个更大的身形，某个半血食人魔，握着斧头从我前面的草里溜出来。装伤的那个在后面隔一段距离追着。~
+= ~只有他们两个。那是我的运气——一个身上只有一包给养的人，看来是容易的目标。他们便松了手。~
+= ~那食人魔好对付。我一闪身躲过一斧，就得以一掌稳稳打在他的胸骨上。掌根以正好的角度击在正好的位置，就能把对手的气一下打掉，让肺停一阵。不是致命一击，却是把一场打斗摆正的好机会。~
+= ~这时那“受伤”的人已扑到我身上，真叫我懊恼。我没能侧身避过他的冲撞，他的匕首扎进了我的肋侧。我们扭打起来，我把刀从肋侧拔出，一拧手，刀刃便弯折断裂，我自己的力量叫我自己都吃了一惊。~
 END
-++ ~The iron shortage must have been at full swing by that point - anything metal that wasn't enchanted ran the risk of becoming brittle in those days.~ + OrelBant3-16
+++ ~那时铁荒该正当最盛——那年月，凡未附魔的金属都有变脆的风险。~ + OrelBant3-16
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-14
-~<CHARNAME>, please. I had been known to set such an ambush such as that, in my younger days. No real attempts were made to mask it - nothing around he could have injured himself with or on, no pack animals, no companions. He was still wearing his armor. That sort of poor showing would have earned a whipping from my drillmaster.~
+~求你了，<CHARNAME>。我年轻时也以设这种伏击出名。他连遮掩都没真做——周围没有他能伤到自己的东西，没有驮畜，没有同伴。他还穿着甲。这样拙劣的把戏，我的教头会抽鞭子的。~
 END
-++ ~Hmm, I see. continue.~ + OrelBant3-13
+++ ~嗯，明白了。继续说。~ + OrelBant3-13
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-15
-~I had not known that, but it makes sense. Thank the Gods you were around to prevent it from getting out of hand.~
+~我先前不知道这事，可这说得通。谢天谢地你在场，没让它失控。~
 END
-++ ~Oh, I've got plenty more where that came from. Come, many heroic deeds await us.~ + PM_OrelEx3-2
-++ ~Well, now we know each others' full stories. Does all of this sate your curiosity?~ + PM_OrelEx3-3
+++ ~哦，这样的故事我还有一大堆。来，许多英雄事迹等着我们。~ + PM_OrelEx3-2
+++ ~好了，如今我们彼此的故事都全了。这些可满足你的好奇？~ + PM_OrelEx3-3
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-16
-~Indeed, as I would learn later. Without his weapon, the bandit was useless in combat. I subdued him and ran, so as to get enough space between myself and the highwaymen to discourage pursuit. I move much faster on foot than a normal man, as I'm sure you've noticed.~
+~确实，这我后来才知道。没了武器，那强盗在战斗里毫无用处。我制住他，然后跑开，好与那些路匪拉开足够距离，叫他们不敢追。我跑起来比常人快得多，你肯定注意到了。~
 END
-++ ~Aye. So I suppose you hoofed it to a healer, then?~ + OrelBant3-17
-++ ~That cannot have been the last of it. Unless your intent was to bore, of course.~ + OrelBant3-18
-++ ~You just left them? After they had tried to murder you?~ + OrelBant3-19
+++ ~是啊。那我猜你是走着去找医者了？~ + OrelBant3-17
+++ ~那不可能就是全部。除非你本意是叫人乏味。~ + OrelBant3-18
+++ ~你就那样丢下他们？在他们想杀你之后？~ + OrelBant3-19
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-17
-~Actually by that point in my journeys I had begun to intuit old techniques of control over the body - the first thing you discover is the ability to control blood flow and accelerate the natural healing process through concentration. The dagger wound I had suffered was survivable in any case, since the idiot had not thought to glaze the blade in poison or offal. Regardless, I ran to Baldur's Gate only to discover upon entry into the city that the commotion of the attack had ripped a hole in my satchel.~
-= ~I had lost a few replaceable rations, but more important was a carved statuette of Rillifane Rallathil that had been made and given to me by my beloved Sylmae as a show of faith in me, in my journey.~
+~其实到那时，我在旅途中已开始悟出古老的控制身体之法——你最先发觉的是能控制血流、靠凝神加快自然愈合。我受的刀伤无论如何都不致命，因为那蠢货没想到在刃上涂毒或污物。总之，我跑到博德之门，进城才发现袭击时的慌乱把我背包划了个洞。~
+= ~我丢了几份可补的干粮，更要紧的是一尊里利凡·拉拉斯刻像——那是我挚爱的希尔梅为我刻制相赠的，是她对我、对我此行的信心。~
 END
-++ ~Had you anything else to remember your family by?~ + OrelBant3-20
-++ ~I pity the fool robbers. What did you do next?~ + OrelBant3-21
+++ ~你还有别的东西可纪念家人吗？~ + OrelBant3-20
+++ ~我可怜那些蠢贼。你接着做了什么？~ + OrelBant3-21
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-18
-~Certainly not.~
-= ~By that point in my journeys I had begun to intuit old techniques of control over the body - the first thing you discover is the ability to control blood flow and accelerate the natural healing process through concentration. The dagger wound I suffered was survivable in any case, since the idiot had not thought to glaze the blade in poison or offal. Regardless, I ran to Baldur's Gate only to discover upon entry into the city that the commotion of the attack had ripped a hole in my satchel.~
-= ~I had lost a few replaceable rations, but more important was a carved statuette of Rillifane Rallathil that had been made and given to me by my beloved Sylmae as a show of faith in me, in my journey.~
+~当然不是。~
+= ~到那时，我在旅途中已开始悟出古老的控制身体之法——你最先发觉的是能控制血流、靠凝神加快自然愈合。我受的刀伤无论如何都不致命，因为那蠢货没想到在刃上涂毒或污物。总之，我跑到博德之门，进城才发现袭击时的慌乱把我背包划了个洞。~
+= ~我丢了几份可补的干粮，更要紧的是一尊里利凡·拉拉斯刻像——那是我挚爱的希尔梅为我刻制相赠的，是她对我、对我此行的信心。~
 END
-++ ~Had you anything else to remember your family by?~ + OrelBant3-20
-++ ~I pity the fool robbers. What did you do next?~ + OrelBant3-21
+++ ~你还有别的东西可纪念家人吗？~ + OrelBant3-20
+++ ~我可怜那些蠢贼。你接着做了什么？~ + OrelBant3-21
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-19
-~Discretion is the better part of valor. I could easily faze them and flee, but slaying them alone in those circumstances would have been a difficult and dangerous task. I chose to retreat with minimal risk or loss incurred. Or so I had thought at the time.~
-= ~By that point in my journey I had begun to intuit old techniques of control over the body - the first thing you discover is the ability to control blood flow and accelerate the natural healing process through concentration. The dagger wound I had suffered was survivable in any case, since the idiot had not thought to glaze the blade in poison or offal. Regardless, I ran to Baldur's Gate only to discover upon entry into the city that the commotion of the attack had ripped a hole in my satchel.~
-= ~I had lost a few replaceable rations, but more important was a carved statuette of Rillifane Rallathil that had been made and given to me by my beloved Sylmae as a show of faith in me, in my journey.~
+~谨慎乃勇武之要。我本可轻易震住他们脱身，可在那种情形下独自杀他们，是艰难又危险的事。我选择以最小的风险与损失撤退。至少当时我是这么想的。~
+= ~到那时，我在旅途中已开始悟出古老的控制身体之法——你最先发觉的是能控制血流、靠凝神加快自然愈合。我受的刀伤无论如何都不致命，因为那蠢货没想到在刃上涂毒或污物。总之，我跑到博德之门，进城才发现袭击时的慌乱把我背包划了个洞。~
+= ~我丢了几份可补的干粮，更要紧的是一尊里利凡·拉拉斯刻像——那是我挚爱的希尔梅为我刻制相赠的，是她对我、对我此行的信心。~
 END
-++ ~Had you anything else to remember your family by?~ + OrelBant3-20
-++ ~I pity the fool robbers. What did you do next?~ + OrelBant3-21
+++ ~你还有别的东西可纪念家人吗？~ + OrelBant3-20
+++ ~我可怜那些蠢贼。你接着做了什么？~ + OrelBant3-21
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-20
-~I did. Some simple beadwork from my daughters, hard clay imprints of their infant feet. But I could simply not bear to lose that statuette... It meant too much to Sylmae, to both of us. So I resolved to get it back.~
-= ~I called in a favor... An old friend in the service had decamped all the way to the Cloakwood, to live in the rustic lifestyle of her ancestors and watch over the land. Together we tracked bandit activity through the Fields of the Dead for over a week, until we came upon the highwaymen. By Tymora's grace, the ogre had kept it for himself. I took it from his corpse.~
-= ~So that's what I was doing in Baldur's Gate, months ago. Were it not for my carelessness I would have passed through much faster - I may not have even been in Amn at the time you found me. Fate has a plan for me, it would seem.~
+~我有。女儿们做的简单串珠，她们婴儿脚丫的泥印。可我就是受不了丢了那尊刻像……它对希尔梅、对我们俩都太重要了。所以我决心取回它。~
+= ~我讨了个人情……一位服役时的旧友已远走斗篷森林，过她祖先的乡野生活、看护那片土地。我们一同在亡者之野追查强盗的行迹一个多星期，终于撞上那些路匪。托泰摩拉的福，那食人魔把它留给了自己。我从他尸身上取回了它。~
+= ~所以几个月前我就在博德之门做这些。要不是我大意，我本会更快穿过那里——你找到我时，我甚至可能还不在安姆。看来命运对我有安排。~
 END
-++ ~Well I'm glad you found your idol, and that fate has brought you to the group.~ + PM_OrelEx3-4
-++ ~That makes two of us. That was quite a tale, Orelios. Thanks for sharing it.~ + PM_OrelEx3-5
-++ ~Well at least you got the bastards back. Serves them right, foolish amateurs.~ + PM_OrelEx3-6
-++ ~Hmph, likely story. I've still got my eye on you, monk.~ + PM_OrelEx3-7
+++ ~我很高兴你找回了你的神像，也很高兴命运把你带到这队伍。~ + PM_OrelEx3-4
+++ ~我们俩都是。那真是个精彩的故事，奥雷利奥斯。多谢分享。~ + PM_OrelEx3-5
+++ ~至少你把那些混蛋收拾了。他们活该，愚蠢的业余货。~ + PM_OrelEx3-6
+++ ~哼，好一套说辞。我还在盯着你，武僧。~ + PM_OrelEx3-7
 
 CHAIN
 IF ~~ THEN Borelios OrelBant3-21
-~I called in a favor... An old friend in the service had decamped all the way to the Cloakwood, to live in the rustic lifestyle of her ancestors and watch over the land. Together we tracked bandit activity through the Fields of the Dead for over a week, until we came upon the highwaymen. By Tymora's grace, the ogre had kept it for himself. I took it from his corpse.~
-= ~So that's what I was doing in Baldur's Gate, months ago. Were it not for my carelessness I would have passed through much faster - I may not have even been in Amn at the time you found me. Fate has a plan for me, it would seem.~
+~我讨了个人情……一位服役时的旧友已远走斗篷森林，过她祖先的乡野生活、看护那片土地。我们一同在亡者之野追查强盗的行迹一个多星期，终于撞上那些路匪。托泰摩拉的福，那食人魔把它留给了自己。我从他尸身上取回了它。~
+= ~所以几个月前我就在博德之门做这些。要不是我大意，我本会更快穿过那里——你找到我时，我甚至可能还不在安姆。看来命运对我有安排。~
 END
-++ ~Well I'm glad you found your idol, and that fate has brought you to the group.~ + PM_OrelEx3-4
-++ ~That makes two of us. That was quite a tale, Orelios. Thanks for sharing it.~ + PM_OrelEx3-5
-++ ~Well at least you got the bastards back. Serves them right, foolish amateurs.~ + PM_OrelEx3-6
-++ ~Hmph, likely story. I've still got my eye on you, monk.~ + PM_OrelEx3-7
+++ ~我很高兴你找回了你的神像，也很高兴命运把你带到这队伍。~ + PM_OrelEx3-4
+++ ~我们俩都是。那真是个精彩的故事，奥雷利奥斯。多谢分享。~ + PM_OrelEx3-5
+++ ~至少你把那些混蛋收拾了。他们活该，愚蠢的业余货。~ + PM_OrelEx3-6
+++ ~哼，好一套说辞。我还在盯着你，武僧。~ + PM_OrelEx3-7
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-1
-~If you say so.~
+~随你说。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-2
-~As you say.~
+~如你所说。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-3
-~I suppose it does. Thank you.~
+~我想是的。谢谢。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-4
-~As am I, <CHARNAME>, as am I.~
+~我也是，<CHARNAME>，我也是。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-5
-~It was my pleasure. Back to the task, then.~
+~那是我的荣幸。那么，回到正事。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-6
-~Indeed. They earned what they received.~
-= ~Ah, but that is enough talking. Let's continue on.~
+~确实。他们得到了应得的。~
+= ~啊，可说够了。我们继续吧。~
 END
-++ ~Good.~ EXIT
+++ ~好。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx3-7
-~Expend your energy in whatever manner you like, <CHARNAME>. I've nothing to hide from you.~
+~你想怎么耗你的力气都行，<CHARNAME>。我没什么要瞒你。~
 END
-++ ~We'll see.~ EXIT
+++ ~我们走着瞧。~ EXIT
 
 CHAIN
 IF ~InParty("PMOrel")
@@ -517,145 +517,145 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrelTalk","GLOBAL",4)~
 THEN Borelios OrelBant5
-~I have been reflecting on my brief time as an adventurer, lately. I have seen much more violence on the road than I had in the service, if you can believe that.~
+~近来我一直在回想我做冒险者的这段短短时日。路上的暴力比我服役时见得多得多，你信吗？~
 DO ~IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-++ ~I would have thought military life would have prepared you in some way for this sort of constant conflict.~ + OrelBant5-2
-++ ~Your martial training must have given you some edge, at least.~ + OrelBant5-3
-++ ~I can't talk right now, Orelios.~ + PM_OrelEx1-1
+++ ~我原以为军旅生活会让你对这类不断的冲突有些准备。~ + OrelBant5-2
+++ ~你的武艺训练至少该给你些优势。~ + OrelBant5-3
+++ ~奥雷利奥斯，我现在不能谈。~ + PM_OrelEx1-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-2
-~You would think so, wouldn't you? But I served in a time of relative peace. Thay always rattled its sabres and sent unofficial, deniable skirmishes our way but... It was quiet.~
+~你也会这么想，对吧？可我服役时是相对太平的年月。萨伊总在挥刀，派些不认账的小冲突过来，可……那时是安静的。~
 END
-++ ~I can imagine living near Thay must have made people quite paranoid.~ + OrelBant5-4
-++ ~What a waste! What's the point of joining the army if you so rarely see combat?~ + OrelBant5-5
-++ ~Why did you leave the army, anyway? Why become a monk?~ + OrelBant5-6
+++ ~我能想象住在萨伊附近必然让人十分多疑。~ + OrelBant5-4
+++ ~多浪费！既然少见战阵，参军又有什么意义？~ + OrelBant5-5
+++ ~你到底为什么离开军队？为什么做武僧？~ + OrelBant5-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-3
-~Ah, but since I've become an ascetic, I employ relatively few of the skills I learned as a scout. For the most part it is entirely different.~
+~啊，可我成了苦修者之后，用的侦察兵本事并不多。多半完全不同。~
 END
-++ ~I was wondering, actually, why you became a monk in the first place. It seems like an odd choice to make, given the circumstances.~ + OrelBant5-6
+++ ~其实我一直想问，你当初为什么做武僧。照当时的情形看，这选择挺怪。~ + OrelBant5-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-4
-~Mistrustful of magic, certainly, and wary of strangers. But not paranoid, nor malicious.~
+~确实不信魔法，也提防生人。但不至于多疑，也不怀恶意。~
 END
-++ ~How did a scout in the army become a monk? That's a strange career path.~ + OrelBant5-6
+++ ~军中的侦察兵怎么成了武僧？这行当转得怪。~ + OrelBant5-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-5
-~Oh, we served a purpose. Aglarondan society is... rather informal. In times of peace the garrison served as constabulary for the countryside. And there were all manner of domestic threats to monitor and deal with.~
+~哦，我们还是有用处的。阿格拉隆德的社会……相当不拘。太平年月，驻军就是乡间的治安队。还有各式各样的内患要盯、要处置。~
 END
-++ ~In that case, why leave? Why leave the army, and your family, and become a monk?~ + OrelBant5-6
-++ ~I appreciate the cultural tutoring, but there are things we should be getting to.~ + PM_OrelEx1-1
+++ ~那又为什么离开？为什么离开军队、离开家人去做武僧？~ + OrelBant5-6
+++ ~多谢你给我上这文化课，可有些事我们该去办了。~ + PM_OrelEx1-1
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-6
-~Well, it is a long story. I was some ways into my martial life when I decided to pursue this path. By then I had met Sylmae and we had borne our daughters.~
+~嗯，那是个长故事。我在武道上走了一段，才决定循这条路。那时我已遇见希尔梅，也有了我们的女儿。~
 END
-++ ~It couldn't have been as simple as "deciding". You must have known becoming an ascetic would have brought you away from them.~ + OrelBant5-7
-++ ~What sort of monk has a family? Surely that is highly unusual.~ + OrelBant5-8
-++ ~Yes, but why a monk? Why not some more straightforward martial discipline?~ + OrelBant5-9
+++ ~不可能只是“决定”那么简单。你必然知道做苦修者会让你离开她们。~ + OrelBant5-7
+++ ~什么武僧会有家室？那肯定极不寻常。~ + OrelBant5-8
+++ ~是的，可为什么是武僧？为什么不选更直白的武道？~ + OrelBant5-9
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-7
-~As I have said, it was something I had to do.~
+~如我所说，那是我不得不做的事。~
 END
-++ ~By what compulsion? This doesn't make sense. There is something you are not telling me.~ + OrelBant5-10
-++ ~Why become a monk when you had a family? I don't understand.~ + OrelBant5-8
+++ ~出于什么强迫？这说不通。你有事瞒着我。~ + OrelBant5-10
+++ ~你有家有室，为什么去做武僧？我不明白。~ + OrelBant5-8
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-8
-~It was unusual, yes, but these things are not always simple or straightforward. I became a monk because the circumstances warranted it and I was well-suited to it.~
+~那确实不寻常，是的，但这类事并不总是简单直白。我做武僧，是因为情形需要，而我也合于此道。~
 END
-++ ~What exactly do you mean by that?~ + OrelBant5-10
+++ ~你这么说到底是什么意思？~ + OrelBant5-10
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-9
-~Because my time with the military had come to an end. There was no sense in my pursuing such a career further.~
+~因为我军中的时日到了头。继续走这条路没有意义。~
 END
-++ ~Why not? You're dancing around the truth, Orelios. Come clean.~ + OrelBant5-10
+++ ~为什么没有？奥雷利奥斯，你在绕着真相打转。说清楚。~ + OrelBant5-10
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-10
-~Look, <CHARNAME>. I have always had an... idiosyncratic way of looking at things. That much was apparent from my earliest days. When I reached a certain point in my life, when I had just started my family, it was decided that my particular talents and temperament were well-suited to the sort of introspective discipline that an ascetic adheres to.~
-= ~I was... Repurposed. So I left my old ways behind. Eventually I had to leave my family behind as well.~
+~你看，<CHARNAME>。我看事情一向有……自己的一套。这点自小就明显。等我人生走到某个阶段，刚成家的时候，就认定我这份特别的才具与性情，正合苦修者所守的那种内省的自律。~
+= ~我被……另作安置了。于是我舍了旧日的生活。最终也只得舍下家人。~
 END
-++ ~The decision was made for you. That is what you're implying, is it not?~ + OrelBant5-11
+++ ~这决定是替你做下的。你是在暗示这个，对吧？~ + OrelBant5-11
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-11
-~... Yes. That is the right of it.~
+~……是的。实情如此。~
 END
-++ ~I still do not understand. Who would set you on this path? And why would you agree to it?~ + OrelBant5-12
-++ ~I think you had better explain yourself.~ + OrelBant5-13
+++ ~我还是不明白。谁会把你推上这条路？你又为什么答应？~ + OrelBant5-12
+++ ~我想你最好解释清楚。~ + OrelBant5-13
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-12
-~My superiors. I was a competent scout, but my even temperament and strict adherence to orders were especially noted.~
+~我的上官。我是个能干的斥候，可我的沉稳性情与严守命令尤其受注目。~
 DO~SetGLOBAL("PMOrelSpy","GLOBAL",2)~
-= ~It was decided that I possessed the qualities deemed optimal in clandestine agents in service of the Symbul, a service we call the Symbulmyn. I was removed from my unit and given options as to how I would go about my service.~
-= ~So I chose to become a monk. It suited me, it was inconspicuous enough to provide sufficient cover on the road, and it made travel uncomplicated.~
+= ~于是认定我具备在辛布尔麾下从事秘密差事者所需的那些品质——那差事我们称作“辛布尔民”。我被调离原队，并就如何履职得到几种选择。~
+= ~于是我选了做武僧。它合我，又足够不显眼，在路上足以为掩护，还让出行变得简单。~
 END
-++ ~You're an Aglarondan spy? Why are you telling me this?~ + OrelBant5-15
-++ ~That answers a great many questions... So, why is an Aglarondan spy here in Amn?~ + OrelBant5-16
-++ ~And I don't suppose your acceptance of my offer to travel with my group was a coincidence. Has this "Symbulmyn" sent you after me, then?~ + OrelBant5-14
+++ ~你是阿格拉隆德的密探？你为什么告诉我这些？~ + OrelBant5-15
+++ ~这解答了许多疑问……那么，一个阿格拉隆德密探为何在安姆？~ + OrelBant5-16
+++ ~我猜你接受我邀你同行的提议，也不是巧合。是这位“辛布尔民”派你来追我的？~ + OrelBant5-14
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-13
-~As you know, I was not always as I am now. Some years into my career as a scout, my superiors took notice of my... particularly fervent fidelity to chain of command and my missions.~
+~如你所知，我并非一向如此。做斥候几年之后，我的上官注意到了我对命令与任务那份……格外炽烈的忠信。~
 DO~SetGLOBAL("PMOrelSpy","GLOBAL",2)~
-= ~It was decided that I possessed the qualities deemed optimal in members of what we call the Symbulmyn - a sort of... covert group in service to Aglarond and the Symbul. I was removed from my unit and given options as to how to proceed.~
-= ~So I chose to become a monk. It suited me, it was inconspicuous enough to provide sufficient cover on the road, and it made travel uncomplicated.~
+= ~于是认定我具备我们称作“辛布尔民”者所需的品质——那是效力于阿格拉隆德与辛布尔的一种……隐秘组织。我被调离原队，并就往后如何行事得到几种选择。~
+= ~于是我选了做武僧。它合我，又足够不显眼，在路上足以为掩护，还让出行变得简单。~
 END
-++ ~I suppose there's some reason you're revealing all this now?~ + OrelBant5-15
-++ ~I see... So why are you here in Amn, then?~ + OrelBant5-16
-++ ~Have you been monitoring me, for your "superiors"?~ + OrelBant5-14
+++ ~我想你现在说这些，总有缘由吧？~ + OrelBant5-15
+++ ~我明白了……那你为何在安姆？~ + OrelBant5-16
+++ ~你一直在替你那些“上官”监视我？~ + OrelBant5-14
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-14
-~Don't be ridiculous, <CHARNAME>. I imagine the Bhaalspawn phenomenon is known to them, but you are not why I'm here.~
+~别荒唐了，<CHARNAME>。我想巴尔之子这现象他们是知道的，可我来此并非为你。~
 END
-++ ~Why are you here, then?~ + OrelBant5-16
+++ ~那你为何在此？~ + OrelBant5-16
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-15
-~If I am to travel with this group and fulfill my duties both, they must be known to you. I have traveled with you long enough to trust that you are not in league with our enemies, so I felt comfortable with the risk.~
-= ~Besides, there are few better covers that one could ask for than local adventurer.~
+~我若要随这队伍同行、又兼顾职责，这些就须让你知道。我与你同行已够久，信得过你未与我们敌人同流，所以我愿冒这风险。~
+= ~再说，也没有比本地冒险者更好的掩护了。~
 END
-++ ~So we've got all that out in the open. What happens now?~ + OrelBant5-17
+++ ~好，都摊开了。现在如何？~ + OrelBant5-17
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-16
-~I have no specific mission, not at the moment. I spent some months in Sembia assisting in operations there before being reassigned to Amn. My instructions are to stay put and report on any activities that threaten the Aglarondan state.~
-= ~As yet I have encountered none, but I am not impatient.~
+~我没有特定任务，眼下没有。我先在森比亚待了几个月协助那边的行动，之后被调来安姆。我的训令是留在原地，就任何威胁阿格拉隆德国体的活动呈报。~
+= ~至今我未曾遇到，不过我不着急。~
 END
-++ ~Why take the risk of telling me this?~ + OrelBant5-15
-++ ~What am I to do with this information?~ + OrelBant5-17
+++ ~你为什么冒这个险告诉我？~ + OrelBant5-15
+++ ~我该拿这些消息怎么办？~ + OrelBant5-17
 
 CHAIN
 IF ~~ THEN Borelios OrelBant5-17
-~I see no reason why we shouldn't continue to travel together. But if you would rather not risk the liability of having someone in my position within the party, or you feel slighted, I am prepared to leave.~
-= ~The decision is yours to make.~
+~我看不出我们有什么理由不继续同行。但若你不愿承担我这样身份的人在队中的牵累，或觉得受了欺瞒，我准备离开。~
+= ~决定由你来做。~
 END
-++ ~This will not come between us. I appreciate your candor, and wish you to remain with the group.~ + PM_OrelEx5-1
-++ ~I agree, this changes nothing. Let us continue as we were.~ + PM_OrelEx5-1
-++ ~This is an awful lot to drop in my lap. Perhaps you should leave, for a time at least. I will find you, should I need you again.~ + PM_OrelEx5-2
-++ ~Do you expect me to abide by this? I will not have a spy in my group. Leave.~ + PM_OrelEx5-2
+++ ~这不会横在我们之间。我领你的坦率，也希望你留在队里。~ + PM_OrelEx5-1
+++ ~我同意，这什么也没改。我们照旧继续。~ + PM_OrelEx5-1
+++ ~这一下砸在我头上太多了。也许你该离开一阵——至少一阵。我若再需要你，会去找你。~ + PM_OrelEx5-2
+++ ~你指望我认这个？我队里不留密探。走。~ + PM_OrelEx5-2
 
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx5-1
-~Lead on, then.~
+~那么，带路吧。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx5-2
-~I will return to the Copper Coronet, then.~
-= ~Until next time, if there is a next time.~
+~那么我就回铜冠酒馆。~
+= ~下回见——如果有下回。~
 END
 IF ~~ THEN DO ~LeaveParty() SetGlobal("OreliusJoinrf","LOCALS",0) EscapeAreaMove("AR0406",1857,957,3)~ EXIT
 
@@ -668,71 +668,71 @@ Global("PM_OrelAbility","GLOBAL",0)
 GlobalGT("PMOrelTalk","GLOBAL",4)
 LevelGT(Myself,12)~
 THEN Borelios PM_Abil1
-~<CHARNAME>, I have made something of a breakthrough in my training, something that could be of some use to us in battle. I will tell you of it if you wish to hear it.~
+~<CHARNAME>，我在修行上有了些突破，或许能在战斗中派上用场。你若要听，我就说。~
 DO ~SetGlobal("PM_OrelAbility","GLOBAL",2) IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-++ ~Alright, tell me.~ + PM_Abil1-2
-++ ~I don't particularly wish to hear of it. Just show me it when we might actually use it.~ + PM_OrelEx4-1
+++ ~好，说吧。~ + PM_Abil1-2
+++ ~我不太想听。等真用得上的时候再给我看。~ + PM_OrelEx4-1
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil1-2
-~Yes, well, first I should explain the nature of my pursuits.~
-= ~As you know, I am a warrior monk, an ascetic. My life as it is now is a... journey of discovery, you might say. I have done away with the things that most would rely upon in battle because as formidable as they are, they are ultimately a crutch - they serve as barriers between the warrior and his environment, in so many ways. They require intense energy and focus to master, they absorb harm, they do the lifting, so to speak, in battle.~
-= ~Ascetics do not concern themselves with such things. We do not seek extrinsic tools to meet our needs, and we recognize that the truest warrior, the perfect warrior, relies only upon himself in all things. This perfection is our purpose as monks.~
+~好，那我先说明我这些修行的性质。~
+= ~如你所知，我是武士武僧，是个苦修者。我如今的生活是一场……寻索之旅，可以这么说。我已舍下多数人在战斗中依赖的东西，因为那些东西虽强，终究是拐杖——在许多方面，它们是战士与环境之间的隔障。要精通它们需耗大量心力与专注，它们承受伤害，它们代劳，打个比方，在战斗中。~
+= ~苦修者不操心这些。我们不求外在的器具来满足所需，我们也明白，最真的战士、完美的战士，万事只靠自己。这份完美正是我们武僧的宗旨。~
 END
-++ ~Go on.~ + PM_Abil1-3
+++ ~继续说。~ + PM_Abil1-3
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil1-3
-~To achieve perfection, we must master three things. The first is absolute discipline of body. The common warrior sees his body as a fragile thing to be protected or utilized in service of some extrinsic instrument. These conceptions are limiting. They fail to realize that the body is, in itself, the most potent instrument at one's disposal. If one masters it, if one ignores all else and devotes oneself to its cultivation, <PRO_HESHE> is capable of things unimaginable to the common warrior. <PRO_HISHER> fists can strike harder than any hammer and cut deeper than any blade, move with blinding speed, and exploit weaknesses that the undisciplined ignore or fail to see. <PRO_HESHE> can sidestep, glance off, or simply deny even the heaviest blow, and effortlessly resist wounds, poisons and contagions.~
-= ~The second mastery is absolute discipline of mind. Through meditation and examination, we devote ourselves to discovering and understanding our consciousness. One realizes that the greatest force at our disposal, that from which all manipulations and affects we impress upon our world originate, is our will. In many ways it is as a muscle - it can be massaged, extended, exerted, little by little, to make it ever stronger. As the will becomes more substantial and resilient, it becomes capable of exerting itself in such a way that it bends or breaks the rules that bind the natural world, in a manner similar in some ways to magic. The ascetic can, through experience and discipline, ignore to some extent the things that bind and subdue normal men - force, gravity, and time.~
-= ~The third and final mastery is absolute discipline of spirit. Like the mind and body, the spirit can be honed and cultivated, and over time an ascetic learns to resist those things that seek to dominate or affect it. The greatest ascetics that we know of have mastered themselved to such an extent that they have defied the natural world entirely, becoming literally supernatural and untethered to the material plane.~
+~为达完美，我们须精通三事。第一是身体的绝对自律。寻常战士把自己的身体看作易碎之物，须保护，或须为某种外在器械效劳。这些想法是自限的。他们不明白，身体本身就是人手中最强的器械。人若能精通它，若能舍下其余一切、专心涵养它，<PRO_HESHE>便能为寻常战士无法想象之事。<PRO_HISHER>双拳能击得比任何锤更重、切得比任何刃更深，能以眩目之速移动，能乘不修者所忽略或看不见的破绽。<PRO_HESHE>能侧闪、卸力，甚至干脆不受最沉的一击，能轻易抗住伤、毒与疫。~
+= ~第二重精通是心念的绝对自律。借冥想与省察，我们专心去发现、去理解自己的意识。人会悟到，手中最大的力量——一切我们对世界所施的操纵与影响所自出者——是我们的意志。它在许多方面就像肌肉：可以揉按、拉伸、施力，一点一点让它更强。意志愈坚实、愈有韧性，就愈能以某种方式施展开来，弯折或打破束缚自然世界的规矩，某些方面近于魔法。苦修者借历练与自律，能在某种程度上无视束缚、压服常人的那些东西——力、重力与时间。~
+= ~第三重、也是最后一重精通，是性灵的绝对自律。性灵如身心，可以磨砺、可以涵养；久而久之，苦修者学会抵抗那些要支配或影响它的事物。我们所知最伟大的苦修者，已把自己修到全然违逆自然世界的境地，成了名副其实的超自然者，不再系于物质界。~
 END
-++ ~I do not understand. You accomplish all this just by focus and meditation?~ + PM_Abil1-4
-++ ~Hmm, I see. So what have you accomplished, then? You don't seem supernatural, not yet at least.~ + PM_Abil1-5
-++ ~That is... quite a lot of exposition. So what 'breakthrough' have you made? It had better be good, to make me sit through that.~ + PM_Abil1-5
+++ ~我不明白。你就靠专注与冥想做到这些？~ + PM_Abil1-4
+++ ~嗯，我明白了。那你究竟做到了什么？你看着不超自然，至少现在还不。~ + PM_Abil1-5
+++ ~这可真是……一大篇讲论。那你到底有什么“突破”？最好够好，才值得我坐着听完。~ + PM_Abil1-5
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil1-4
-~It is not as simple as that. We gain our knowledge and ability in the same manner as everyone else - life experience and battle. All the meditations and self-reflections in the world are useless without experiences to provide lessons and context.~
+~没那么简单。我们求知识与本事，跟旁人一样——靠阅历与战阵。世间一切冥想与自省，若没有经历供给教训与情境，都是无用。~
 END
-++ ~Alright, so what is this newfound ability that you've developed, then?~ + PM_Abil1-5
+++ ~好，那你新得的这本事是什么？~ + PM_Abil1-5
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil1-5
-~I have already cultivated many ascetic techniques on my path - I can exploit weaknesses to debilitate mortal combatants, I can heal non-fatal wounds and ignore some magic and disease. This recent discovery has been in the second pursuit, the discipline of mind.~
-= ~I believe I have made my first tentative steps toward affecting the material world through will alone. Specifically, I believe that if I project my mind outwards, I can interfere with the senses of others, to a small degree.~
+~我在这条路上已修成许多苦修技法——我能乘破绽使凡俗战者衰弱，能治非致命之伤，能无视部分魔法与疾病。这最近的发现，出在第二重修行，心念的自律。~
+= ~我相信我已踏出最初试探的步子，能单凭意志影响物质世界。具体说，我相信若我把心念向外投射，就能在小的程度上干扰他人的感官。~
 END
-++ ~How do you mean?~ + PM_Abil1-6
+++ ~你是什么意思？~ + PM_Abil1-6
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil1-6
-~By bending the air and space around me, I can make it more difficult for others to strike me, for a time at least. A skilled opponent could dispense with this defense quickly enough, and one with the ability to discern true reality via whatever means would see right through it, but it should prove useful in combat nonetheless.~
+~借弯折我四周的空气与空间，我能让他人一时更难击中我——至少一时。老练的对手能很快破掉这防备，能以任何手段辨明真幻的人更会一眼看穿，可在战斗中仍该有用。~
 END
-++ ~That sounds excellent. Whatever edge we can gain in combat is welcome.~ + PM_OrelEx4-2
-++ ~I see. I don't know how useful that could prove but I suppose it can't hurt.~ + PM_OrelEx4-2
-++ ~Uh huh, whatever, guy. Just make good use of it.~ + PM_OrelEx4-3
+++ ~听着极好。战斗中能得的优势，我们都欢迎。~ + PM_OrelEx4-2
+++ ~我明白了。我不知道这能有多大用，但我想总无害处。~ + PM_OrelEx4-2
+++ ~嗯哼，随你吧，老兄。好好用上就是。~ + PM_OrelEx4-3
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx4-1
-~Alright.~
-= ~(*Orelios has gained the "Denial of Sight" ability. It is functionally identical to the mage spell "Mirror Image" and is usable once per day from the innate abilities tab.*)~
+~好吧。~
+= ~（*奥雷利奥斯已获得“拒视”能力。它在功能上与法师法术“镜影术”相同，可自先天天赋页每日使用一次。*）~
 DO ~AddSpecialAbility("PMmirro")~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx4-2
-~I agree. Let's continue on.~
-= ~(*Orelios has gained the "Denial of Sight" ability. It is functionally identical to the mage spell "Mirror Image" and is usable once per day from the innate abilities tab.*)~
+~我同意。我们继续。~
+= ~（*奥雷利奥斯已获得“拒视”能力。它在功能上与法师法术“镜影术”相同，可自先天天赋页每日使用一次。*）~
 DO ~AddSpecialAbility("PMmirro")~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PM_OrelEx4-3
-~I will do as you say.~
-= ~(*Orelios has gained the "Denial of Sight" ability. It is functionally identical to the mage spell "Mirror Image" and is usable once per day from the innate abilities tab.*)~
+~我照你说的做。~
+= ~（*奥雷利奥斯已获得“拒视”能力。它在功能上与法师法术“镜影术”相同，可自先天天赋页每日使用一次。*）~
 DO ~AddSpecialAbility("PMmirro")~
 END
 IF ~~ THEN EXIT
@@ -746,22 +746,22 @@ GlobalGT("PMOrelTalk","GLOBAL",4)
 Global("PM_OrelAbility","GLOBAL",2)
 LevelGT(Myself,16)~
 THEN Borelios PM_Abil2
-~I believe I have made more progress in my meditations.~
+~我相信我在冥想上又进了一步。~
 DO ~SetGlobal("PM_OrelAbility","GLOBAL",3) IncrementGlobal("PMOrelTalk","GLOBAL",1)~
 END
-++ ~Oh? What have you gained now?~ + PM_Abil2-2
+++ ~哦？这回得了什么？~ + PM_Abil2-2
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil2-2
-~I have been meditating consistently as we have traveled, reflecting on our experiences and conflicts. One of the myriad benefits of practicing such meditation is the... clarity of mind that it brings. To the average person it provides a calm and measured state, and a way to better handle stress and the strain of life. An ascetic, however, benefits in greater ways. We constantly seek to understand our relation to the spaces we find ourselves in, and the power we can wield over those spaces, should we gain sufficient wisdom.~
-= ~I feel as though I have gained a greater grounding in physical space, a clearer perception of reality, through my meditations. I believe that were we to face enemies who would seek to deceive us through trickery or magic, I may be able to foil them. It takes concentration, but it could be of some use to us.~
+~我们行旅时我一直坚持冥想，反复省察我们的经历与冲突。修这种冥想有许多益处，其中一项是它带来的……心念清明。对常人，它给一份平静有度的状态，一种更能应付压力与生活重负的法子。可苦修者得益更多。我们不断想弄明白自己与所处空间的关系，以及若有足够智慧，我们能对那空间施展的力量。~
+= ~我觉得借冥想，我在物理空间上立得更稳，对真实的知觉也更清楚。我相信若我们遇到想以诡计或魔法欺瞒我们的敌人，我也许能破掉他们。这要凝神，但对我们该有些用处。~
 END
-++ ~Hmm, interesting. I'll let you know if and when we need to utilize this ability of yours.~ + PM_Abil2-3
+++ ~嗯，有意思。等我们需要用上你这本事时，我会告诉你。~ + PM_Abil2-3
 
 CHAIN
 IF ~~ THEN Borelios PM_Abil2-3
-~As you wish. I'm sure it will come in handy.~
-= ~*Orelios has gained the "Denial of Deceit" ability. It is functionally identical to the mage spell "Oracle" and is usable once per day from the innate abilities tab. Be aware that this ability will dispel some beneficial party-cast illusions, so use it wisely.*)~
+~随你。我确信它会派上用场。~
+= ~（*奥雷利奥斯已获得“拒诈”能力。它在功能上与法师法术“神谕术”相同，可自先天天赋页每日使用一次。注意：此能力会驱散队友所施的部分有益幻术，慎用。*）~
 DO  ~AddSpecialAbility("PMdecei")~
 END
 IF ~~ THEN EXIT
@@ -770,165 +770,165 @@ CHAIN
 IF ~InParty("jaheira")
 Global("PM_JaheiraYell","GLOBAL",1)~
 THEN Borelios PMBJahCon-1
-~<CHARNAME>, there is something we must speak of.~ DO ~SetGlobal("PM_JaheiraYell","GLOBAL",2)~
+~<CHARNAME>，有件事我们必须谈。~ DO ~SetGlobal("PM_JaheiraYell","GLOBAL",2)~
 END
-++ ~Alright. What is it?~ + PMBJahCon-2
-++ ~I can't be bothered right now, Orelios.~ + PMBJahEx1
+++ ~好。什么事？~ + PMBJahCon-2
+++ ~奥雷利奥斯，我现在没心思。~ + PMBJahEx1
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-2
-~I seem to have... struck a nerve with Jaheira. She is becoming more and more severe.~
+~我似乎……触动了贾希拉的一根神经。她越来越严厉了。~
 == BJAHEIR ~Severe is not the word. Perhaps you will have some luck in getting some sense out of this obstinate fool. It is like drawing water from a stone.~
 END
-++ ~Alright, let's just stay calm. You had better start from the beginning.~ + PMBJahCon-3
-++ ~I swear, some days I don't know why I bother with the hassle of a party. What is it now?~ + PMBJahCon-3
-++ ~You know what? No, I don't have time for this. Leave me alone, both of you.~ + PMBJahEx1
+++ ~好，都冷静些。你最好从头说起。~ + PMBJahCon-3
+++ ~我发誓，有些日子我真不知道何必受这队伍的麻烦。这回又是什么？~ + PMBJahCon-3
+++ ~你知道吗？不，我没时间管这个。别烦我，你们两个都别。~ + PMBJahEx1
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-3
-~We are having difficulties that I had not anticipated. There is a conflict over my decision to-~
+~我们之间有些我未曾预料的麻烦。冲突起于我的决定——~
 == BJAHEIR ~Abandon his loved ones?~
 == Borelios ~-set off on an adventure on my own. Frankly I don't know why this is any of her business.~
 END
-++ ~Well, why did you?~ + PMBJahCon-4
-++ ~Let's hear her out, shall we? What exactly is the trouble, Jaheira?~ + PMBJahCon-5
-++ ~I don't see how this is any of your concern, Jaheira.~ + PMBJahCon-6
-++ ~It's none of my business either. Figure it out amongst the two of you, I want nothing to do with it.~ + PMBJahEx1
+++ ~那你为什么那么做？~ + PMBJahCon-4
+++ ~听听她说完，好吗？贾希拉，到底是什么麻烦？~ + PMBJahCon-5
+++ ~贾希拉，我看不出这跟你有什么关系。~ + PMBJahCon-6
+++ ~也不关我的事。你们俩自己弄明白，我不想沾。~ + PMBJahEx1
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-4
-~I had fulfilled all obligations to my family and I wanted to set off on my own and learn about the world. My girls had come of age, taken on their own lives and duties. Their mother had her work with the church and my days in the legion were long behind me. So I left.~
+~我已对家人尽完所有义务，想独自上路去认识这世界。我的女儿们已成年，有了各自的生活与职责。她们的母亲在教会有事，我的军团岁月早已过去。所以我走了。~
 END
-++ ~Surely being part of a family entails far more than simply raising your children and wiping your hands of the life that you had.~ + PMBJahCon-7
-++ ~But why adventure? You know how dangerous it is. Do you want to be one of those fathers who left one day never to return?~ + PMBJahCon-8
+++ ~身为一家之人，肯定远不止是把孩子养大、然后对曾经的生活一甩手。~ + PMBJahCon-7
+++ ~可为什么要冒险？你知道那有多危险。你难道想做那种某天走了就再不回来的父亲？~ + PMBJahCon-8
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-5
-~I would rather-~
+~我宁愿——~
 == BJAHEIR ~I am deeply troubled by the cavalier attitude that Orelios has taken with regard to those around him. The life of an adventurer is not for those with such attachments. It is a selfish, callous path to take. He has no regard for the people he is responsible for.~
 == Borelios ~That is completely untrue.~
 END
-++ ~That sounds like a reasonable enough complaint. What do you have to say for yourself, Orelios?~ + PMBJahCon-4
-++ ~But surely Orelios sought the permission of his family before he left them.~ + PMBJahCon-9
-++ ~So why did you decide on a life of adventure, Orelios?~ + PMBJahCon-10
+++ ~这抱怨听着相当有理。奥雷利奥斯，你有什么为自己辩的？~ + PMBJahCon-4
+++ ~可奥雷利奥斯离开前必定征求过家人的准许吧。~ + PMBJahCon-9
+++ ~那你为什么决定过冒险的生活，奥雷利奥斯？~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-6
-~Thank you, <CHARNAME>~
+~谢谢你，<CHARNAME>~
 == BJAHEIR~How can I be expected to rely upon this man in times of trial when he has needlessly abandoned those who have need of him?~
 == Borelios ~I have done no such thing. They had no need of me, not anymore. I would not have taken the risk if it had been on anyone other than myself.~
 END
-++ ~But surely your family does assume some risk? I find it difficult to believe that they do not have some stake in your returning to them someday. What happens if you don't?~ + PMBJahCon-8
-++ ~I would think that your family would always have need of you.~ + PMBJahCon-7
-++ ~I don't understand, what was the impetus to leave in the first place?~ + PMBJahCon-10
+++ ~可你的家人必定也担着些风险吧？我很难相信他们对你某天回家没有份指望。若你不回去呢？~ + PMBJahCon-8
+++ ~我原以为你的家人总需要你。~ + PMBJahCon-7
+++ ~我不明白，当初要走的起因是什么？~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-7
-~My children will always be my children, that is true. But we were never a typical family. Sylmae and I never married, we never even lived together, and even after she had the twins I had to move about in service of my country. I have been as present as I can, given all that I can, but they have always done well, flourished even, without me.~
-= ~I was always meant to travel, but I remained as close as I could until my children were no longer dependent upon me. Meriel lives as I once did, as a scout for the state. Lydia serves under her mother in the church of Rillifane. They have no need for my guidance anymore.~
+~我的孩子永远是我的孩子，这是真的。可我们从不是寻常的一家人。希尔梅和我从未成婚，甚至从未同住，即便她生了双胞胎之后，我也得为国事四处奔走。我已尽我所能常在、尽我所能付出，可没有我也一向过得好，甚至兴旺。~
+= ~我从来注定要远行，可我尽可能留下，直到孩子不再依赖我。梅里尔过着如我旧日的生活，做国家的斥候。莉迪亚在她母亲手下效力于里利凡的神殿。她们已不再需要我的指引。~
 END
-++ ~Shouldn't you have stayed even then? Sylmae must have desired your presence.~ + PMBJahCon-11
-++ ~What do you mean you were "always meant to travel"?~ + PMBJahCon-12
+++ ~即便那时你不也该留下吗？希尔梅必定盼你在身边。~ + PMBJahCon-11
+++ ~你说“从来注定要远行”是什么意思？~ + PMBJahCon-12
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-8
-~I thought we had gone over this...~
+~我以为我们已谈过这个了……~
 == BJAHEIR ~That is precisely my point! How does he reconcile himself to that possibility?~
 == Borelios ~I am well into middle age, <CHARNAME>. In the grand scheme of things my death is not that far ahead of me, adventure or no. I had fulfilled my obligations to my family, I had a chance to see the world at large, and I took it. That's all.~
 END
-++ ~Is that not cavalier? Your debts to your family go beyond raising them.~ + PMBJahCon-7
-++ ~I still don't understand why you would leave. Why the need to depart Aglarond and come here?~ + PMBJahCon-10
+++ ~那不也太洒脱了吗？你对家人的亏欠不止是把他们养大。~ + PMBJahCon-7
+++ ~我还是不明白你为什么要走。为什么非得离开阿格拉隆德来这儿？~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-9
-~Yes, I did. I would not have left otherwise. They understand why I needed to go.~
+~是的，我征求过。不然我不会走。他们明白我为何必须走。~
 END
-++ ~And why was that?~ + PMBJahCon-10
+++ ~那是为何？~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-10
-~Because it was required of me.~
+~因为那是我该做的。~
 END
-IF ~Global("PM_OreliosWhom","GLOBAL",0)~ THEN REPLY ~By whom?~ + PMBJahCon-13
+IF ~Global("PM_OreliosWhom","GLOBAL",0)~ THEN REPLY ~谁要求的？~ + PMBJahCon-13
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-11
-~Sylmae and I... We have always loved one another and always will, but we have lived largely separate lives away from our daughters. That may be difficult to understand, but it is the truth. I have asked her many times to suffer my absence, perhaps too many, and this is the longest I have ever made her wait.~
-= ~That wait may last until we are both in the afterlife. But she is the strongest woman I know, and she knows me better than anyone. She knows why I am here, away from her, and our children. She accepts it.~
+~希尔梅和我……我们一向相爱，也永远会相爱，可我们大体上过着各自的生活，离我们的女儿们很远。这也许难以理解，可这是实情。我多次请她忍受我的不在，也许太多了，而这次是我让她等得最久的一次。~
+= ~这等待也许要持续到我们双双身入冥世。可她是我所知最坚强的女人，也比谁都懂我。她明白我为何在此、为何离她和孩子。她接受这个。~
 == BJAHEIR ~But does she embrace it?~
 == Borelios ~Of course not. But it is my choice, not hers, and she accepts that.~
 == BJAHEIR ~And you openly admit to disregarding her? Incredible.~
 END
-++ ~Why make the choice to leave? Why not stay with her? You obviously wanted to.~ + PMBJahCon-10
+++ ~为什么选择离开？为什么不留在她身边？你显然想留。~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-12
-~It was something I knew I had to do, ever since I began life as an ascetic.~
-~I had to move beyond Aglarond if I was to take full advantage of my discipline.~
+~那是我知道自己必须做的事，自从我做苦修者起就是。~
+~若要充分发挥我的修行，我就得走出阿格拉隆德。~
 END
-++ ~Why, exactly?~ + PMBJahCon-10
+++ ~究竟为什么？~ + PMBJahCon-10
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-13
-~Whom? No one. Myself. To achieve my full potential as an ascetic I had to make those last painful excisions and let go of the material things that I cared about, become independent. Not permanently, mind you, but I hoped to gain a better understanding of myself and my relations to others by depriving myself of my family, precisely because they meant so much to me.~ DO ~SetGlobal("PM_OreliosWhom","GLOBAL",1)~
+~谁？没有人。我自己。要做成苦修者的全部潜力，我就得做最后那些痛切的割舍，放下我在意的俗物，变得独立。不是永久，你要明白，可我希望借舍去家人来更懂自己与别人的关系——正因为他们对我太重要。~ DO ~SetGlobal("PM_OreliosWhom","GLOBAL",1)~
 == BJAHEIR ~So that is it. You left to escape them.~
 == Borelios ~That is not how I would put it. I had to turn away from them, yes. But not because I resented them. And this is only for a time. I fully intend to return.~
 END
-++ ~And what if you don't return?~ + PMBJahCon-14
-++ ~Alright, so now that we all understand one another a little better, can we resolve this dispute? Or are you two going to continue this bickering~ + PMBJahCon-15
+++ ~那你若不回来呢？~ + PMBJahCon-14
+++ ~好，既然我们彼此都多懂了一点，能不能了结这争执？还是你们两个要继续吵下去？~ + PMBJahCon-15
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-14
-~I will. I promised I would.~
+~我会的。我答应过。~
 == BJAHEIR ~Hmph, arrogance.~
 END
-++ ~Okay, enough of this. Can we put this to bed? I can't take much more of this antagonism in my party.~ + PMBJahCon-15
-++ ~Look, let's just get this settled. I'm tired of having to listen to you two.~ + PMBJahCon-15
+++ ~好了，够了。能不能把这事了了？我受不了队里再多这种对立。~ + PMBJahCon-15
+++ ~你看，我们把这事了断吧。我听你们俩已经听够了。~ + PMBJahCon-15
 
 CHAIN
 IF ~~ THEN Borelios PMBJahCon-15
-~I had nothing to do with this "conflict". If you wish this to end then Jaheira needs to admit to what she's doing.~
+~我跟这“冲突”毫无关系。你若想了结，那贾希拉得承认她在做什么。~
 == BJAHEIR ~Admit to what? Are you accusing me of something?~
 == Borelios ~Whether you know it or not, you are foisting your misplaced guilt over the death of your husband onto me.~
 == BJAHEIR ~You... You have no right!~
 == Borelios ~Do you think I would accuse you of such unless I absolutely had to? You have only been unreasonable to me.~
 END
-++ ~Orelios's right, Jaheira. It's not healthy. Examine yourself and see.~ + PMBJahEx1-2
-++ ~That's out of line, Orelios. Jaheira's concerns are perfectly valid. I don't think you are taking her seriously.~ + PMBJahEx1-3
-++ ~Alright, I'm not getting involved in this anymore. Can I trust the two of you to hash this out yourselves?~ + PMBJahEx1-4
+++ ~奥雷利奥斯说得对，贾希拉。这不健康。反省一下自己。~ + PMBJahEx1-2
+++ ~这话过分了，奥雷利奥斯。贾希拉的顾虑完全有理。我不觉得你在当真对待她。~ + PMBJahEx1-3
+++ ~好了，我不再掺和了。我能信你们俩自己把这事说清吗？~ + PMBJahEx1-4
 
 CHAIN
 IF ~~ THEN Borelios PMBJahEx1
-~Alright, we'll try and sort this out between us. You won't hear about it again.~
+~好，我们俩自己试着理清。你不会再听到这事。~
 END
 IF ~~ THEN EXIT
 
 CHAIN
 IF ~~ THEN Borelios PMBJahEx1-2
-~I never meant to agitate you, Jaheira. I think this is a misunderstanding.~
+~贾希拉，我从未有意激你。我想这是场误会。~
 == BJAHEIR~I... I just... *sigh* Perhaps you are both right. I'm... I'm sorry Orelios. I still think you are being at least somewhat callous toward your family but I have gotten entirely too angry about it. I just hope you don't hurt them more than you already have.~
 == Borelios ~I'm doing my best not to, Jaheira. I promise you that.~
 END
-++ ~I'm glad we could resolve this. Back to the road, eh?~ + PMBJahEx1-5
+++ ~很高兴我们能化解。回到路上，嗯？~ + PMBJahEx1-5
 
 CHAIN
 IF ~~ THEN Borelios PMBJahEx1-3
-~Hmm... Perhaps you have a point. I do not believe I have done wrong by my family, but... I suppose it is reasonable to suggest that may not be the case.~
+~嗯……也许你说得有理。我不信自己亏负了家人，但……我想，说未必如此也算合理。~
 == BJAHEIR
-~I suggest that you pay greater heed to others in the future. I'm willing to permit you your past mistakes, but the group needs you to think outside yourself at least some of the time.~
+~我建议你往后多体恤别人。你的旧错我可以容，可队伍需要你至少有时候想到自己以外。~
 END
-++ ~Alright, now that we've resolved this, we can focus on different things.~ + PMBJahEx1-5
+++ ~好，既然化解了，我们可以专心别的事。~ + PMBJahEx1-5
 
 CHAIN
 IF ~~ THEN Borelios PMBJahEx1-4
-~I believe you can, but things are going to stay heated for awhile. You may have to take care to separate us for awhile, at least when we make camp.~
+~我相信你可以，可事情还要热一阵。你可能得留意把我们分开一阵，至少扎营时。~
 == BJAHEIR ~Yes, we will deal with this, though I think we could have used your moderation. Do not expect civility out of us for some time.~
 END
-++ ~So be it. Let's get back to the task at hand.~ EXIT
+++ ~那就这样。回到手头的事。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PMBJahEx1-5
-~I am glad to put this behind us.~
+~我很高兴把这事丢在身后。~
 == BJAHEIR ~Yes, it will be good to function as a group again without strife.~
 END
 IF ~~ THEN EXIT
@@ -943,7 +943,7 @@ See("minsc")
 !StateCheck("minsc",CD_STATE_NOTVALID)
 Global("PM_MinscGab","GLOBAL",1)~
 THEN BMINSC OrelMinB1
-~Eh, excuse me Orelios.~
+~呃，打扰一下，奥雷利奥斯。~
 == Borelios ~Hmm? Yes?~
 == BMINSC ~Boo seems to think that you are from Aglarond. Is this true?~
 == Borelios ~Boo is your... rodent companion? Ah. Yes, Minsc, I hail from Aglarond.~
@@ -951,7 +951,7 @@ THEN BMINSC OrelMinB1
 == Borelios ~Your witch? You are Rashemi?~
 == BMINSC ~We are! Tell me Orelios, what brings you here to Amn? Are you a noble warrior? Do you have dajemmas where you come from? Are you on one as well?~
 == Borelios ~Hm, I suppose you could say I am on a "dajemma" of sorts. I travel to learn about myself and the world... As to whether I am noble, I suppose that depends on who you ask.~
-= ~How does your own dajemma fare, Minsc?~
+= ~明斯克，你自己的达耶玛走得如何？~
 == BMINSC ~It is... It is a failure! My witch was murdered and I could do nothing! My mighty heart, it breaks so!~
 == Borelios ~Were I you, Minsc, I would not despair. Witch or no, you have proven yourself a capable force against wickedness. Surely that must count for something?~
 == BMINSC ~Boo thinks maybe you are right, but still I struggle to keep my tears at bay. Continue on, Orelios, we shall bring the burden of my shame down upon the heads of evil!~
@@ -966,12 +966,12 @@ See("minsc")
 !StateCheck("minsc",CD_STATE_NOTVALID)
 Global("PM_MinscGab","GLOBAL",2)~
 THEN BMINSC OrelMinB2
-~Boo is curious about why you sit so still when we are at camp, Orelios. He would have asked himself, but he did not want to disturb you.~
+~布布好奇，我们在营地时你为什么坐得那么静，奥雷利奥斯。它本想自己问，可不愿打扰你。~
 == Borelios ~When the party sets to rest, I begin my meditations for the day.~
 == BMINSC ~How do you do this, eh, meditation?~
 == Borelios ~It's a simple matter of concentration and relaxation. Simply focus, and allow your mind to clear. Perhaps you should try it, it may do you some good.~
 == BMINSC ~I am interested but Boo says that clearing my mind may be more trouble than it's worth.~
-= ~But we are grateful in any case, for the explanation.~
+= ~可无论如何，我们感激这番解释。~
 DO ~IncrementGlobal("PM_MinscGab","GLOBAL",1)~
 EXIT
 
@@ -983,21 +983,21 @@ See("jaheira")
 !StateCheck("jaheira",CD_STATE_NOTVALID)
 Global("PM_JaheiraGab","GLOBAL",1)~
 THEN BJAHEIR AudJahB1-1
-~It appears that life on the road suits you, Orelios.~
+~看来路上的生活合你，奥雷利奥斯。~
 == Borelios
-~It does, I think. It has been over a year since I left my homeland. One learns to live simply - it helps that I carry so few accoutrements of the adventurer's life.~
+~我想是的。我离开故土已一年有余。人学会简朴地活——我带的冒险者行头少，这也帮了忙。~
 == BJAHEIR
-~I imagine so. The simple life is often the better, I think. But traveling with <CHARNAME>, simplicity is impossible.~
+~我能想象。我想简朴的生活往往更好。可跟<CHARNAME>同行，简朴是不可能的。~
 == Borelios
-~It musn't be so bad, if you're still here.~
+~既然你还在，那想必没那么糟。~
 == BJAHEIR
-~Well now, I have old promises to live up to... I imagine you know a great deal about keeping to one's oaths.~
+~嗯，我有旧日的誓约要守……我想你对守信知之甚深。~
 == Borelios
-~If I have obligations to fulfill it it because I have chosen them. Those who break their promises lose control over themselves.~
+~我若有义务要尽，那是因为我选择了它们。毁诺者失去对自己的掌控。~
 == BJAHEIR
-~Hmph. Better to break your word than do worse in keeping it. If you seek to ingratiate yourself to me, you can start by keeping watch at next camp. It is your turn to do so.~
+~哼。宁可毁诺，也别在守诺时做出更坏的事。你若想讨我的好，下次扎营时先去守夜。轮到你。~
 == Borelios
-~I look forward to it.~
+~我盼着。~
 DO ~IncrementGlobal("PM_JaheiraGab","GLOBAL",1)~
 EXIT
 
@@ -1010,19 +1010,19 @@ See("jaheira")
 Global("PM_JaheiraGab","GLOBAL",2)
 AreaType(OUTDOOR)~
 THEN Borelios AudJahB2-1
-~Hmmm, I am yet unaccustomed to this terrain. Were we to be met with an ambush I do not know if I would detect it in time to prepare us.~
+~嗯，我还不惯这地形。若遭伏击，我不知道自己能否及时察觉、让我们有所准备。~
 == BJAHEIR
-~Have you so little faith in the group? We have been adventuring for some time, we are quite capable. If your hope is to provide foolproof protection against treachery I suggest you disabuse yourself of it. We always face risks.~
+~你对队伍就这么没信心？我们冒险已有些时日，相当能干。你若想求得对背叛的万全防护，我劝你打消这念头。我们总在冒险。~
 == Borelios
-~I wouldn't suggest otherwise, and I have no doubts as to the capability of my companions, but I performed duties as a scout for nearly 20 years. Old habits die hard.~
+~我不会说别的，我也毫不怀疑同伴的本事，可我做了近二十年斥候的差事。旧习难改。~
 == BJAHEIR
-~I imagine the warning signs would be easy enough to discern - enclosed kill zones, choke points, that sort of thing.~
+~我想警讯该不难辨认——封闭的杀伤区、咽喉要道，诸如此类。~
 == Borelios
-~My experience has taught me that the signs are usually telltale and minute. The territory I am used to patrolling is primarily grassland and coastline. Natural means of hiding are rare in such environments.~
+~我的经验教我，那些迹象往往细微却明白。我惯于巡逻的地界多是草原与海岸。那种环境里天然的藏身之处罕见。~
 == BJAHEIR
-~Then we shall simply adjust our tactics to compensate for the difference. You should not overworry, Orelios. It does not befit a man as typically sanguine as yourself.~
+~那我们就调整战术来补这差异。你不该过虑，奥雷利奥斯。这不称你这一向从容的人。~
 == Borelios
-~Poke fun all you like, Jaheira. I have tasks that need tending to.~
+~你尽管取笑，贾希拉。我有事要照料。~
 DO ~IncrementGlobal("PM_JaheiraGab","GLOBAL",1)~
 EXIT
 
@@ -1036,38 +1036,38 @@ Global("PM_JaheiraGab","GLOBAL",3)
 Global("PM_JaheiraYell","GLOBAL",0)
 AreaType(FOREST)~
 THEN BJAHEIR AudJahB3-1
-~Mmm, it is always refreshing to grace the wilderness again. You should loosen a bit, Orelios, lest you miss out on nature's simpler pleasures.~ DO ~SetGlobal("PM_JaheiraYell","GLOBAL",1)~
+~嗯，再次踏入荒野总叫人神清气爽。你该放松些，奥雷利奥斯，免得错过自然更简单的乐趣。~ DO ~SetGlobal("PM_JaheiraYell","GLOBAL",1)~
 == Borelios
-~I enjoy the wilds as much as any urban-bound man can. I would periodically venture into the fringes of the Yuirwood back home, at my partner's request. But refreshing as it is, I prefer quieter climes.~
+~我享受荒野，不亚于任何困在城里的人。在家时我常应伴侣之请，走到尤尔林的边缘。可它虽清爽，我更喜欢安静些的地界。~
 == BJAHEIR
-~Hm... Your family is elven I take it?~
+~嗯……我猜你的家人是精灵？~
 == Borelios
-~Half-elven. Mixed-race folk, such as my Sylmae, are more common in Aglarand than I have seen elsewhere. But yes, the woods of my land are a place for elves, not humans. I suppose I am privileged to have seen as much of them as I have.~
+~半精灵。像我的希尔梅这样的混血，在阿格拉隆德比我在别处见的多。可的确，我乡的林子是精灵的地方，不是人类的。我想我能见它们这么多，算是福分。~
 == BJAHEIR
-~"My" Sylmae? I did not take you for the sentimental type, Orelios.~
+~“我的”希尔梅？我倒没看出你是多情的人，奥雷利奥斯。~
 == Borelios
-~Nor I you, but I surely know that you have an inner life, just as I do. You hide it in kind.~
+~我也没看出你是，可我确知你有内里的生活，正如我一样。你藏得也相似。~
 == BJAHEIR
-~I... My husband was taken from me, cruelly, when we were brought to this cursed land. How...~
-=~Tell me, Orelios, how do you live knowing that you might forever deprive your family of your presence in choosing this life?~
+~我……我们被带到这受咒的土地时，我的丈夫被人残忍地夺走了。怎么会……~
+=~告诉我，奥雷利奥斯，你明知选择这生活可能永远让家人失去你的陪伴，你怎么活得下去？~
 == Borelios
-~I have to remind myself that they are destined to feel my loss, or I theirs, at some point in the future. I could die tonight or 50 years from now and their sorrow would be much the same. There is no avoiding it. So I cannot let it bother me.~
+~我得提醒自己，他们注定要在将来某时感到失去我，或我感到失去他们。我可能今夜就死，也可能五十年后，他们的悲恸大致相同。避不开。所以我不能让它烦我。~
 == BJAHEIR
-~I think...~
-= ~No. No, that is not good enough. You have a partner and daughters who surely desire your presence, whatever they may say, and yet you deny them, and risk their further suffering every day.~
-= ~How could you be so cruel to them?~
+~我想……~
+= ~不。不，那不够。你有一个伴侣和几个女儿，无论她们怎么说，必定盼你在身边，你却拒了她们，还每天让她们多受一份苦。~
+= ~你怎么能对她们这么残忍？~
 == Borelios
-~I love my family, Jaheira, more than anything. But I must live my life.~
+~贾希拉，我爱我的家人，胜过一切。可我必须过我的人生。~
 == BJAHEIR
-~Do you not understand your own words? Are you blind? You had a life, a life entwined with that of others, and you turned your back on them. Why? Why would you do that?~
+~你听不懂自己说的话吗？你瞎了吗？你有过生活，一种与他人交织的生活，你却背过身去。为什么？你为什么要那样？~
 == Borelios
-~I do not believe it possible to answer that question to your satisfaction, Jaheira. I am sorry you feel the way that you do, but I think it sensible that we try and work this out when you have... taken time.~
+~我不信这问题能答到让你满意，贾希拉。你如此感受，我很难过，可我想我们还是等你……缓一缓再理清为好。~
 == BJAHEIR
-~No! Answer me! Bastard! Sadist!~
+~不！回答我！混蛋！虐人者！~
 == Borelios
-~I am going to scout ahead of the group. I will think on this, I give you my word. Hopefully in time we can resolve this.~
+~我去到队伍前面探路。这事我会想，我向你保证。但愿到时候我们能化解。~
 == BJAHEIR
-~Go then. I do not... Go. Go away.~
+~那就去。我不……走。走开。~
 DO ~IncrementGlobal("PM_JaheiraGab","GLOBAL",1)~
 EXIT
 
@@ -1079,24 +1079,24 @@ See("PMOrel")
 !StateCheck("Yoshimo",CD_STATE_NOTVALID)
 Global("PM_YoshimoGab","GLOBAL",1)~
 THEN BYOSHIM AudYosB1
-~Orelios! What an honor it is to find myself traveling with a warrior monk, and so far from home!~
+~奥雷利奥斯！能与一位武士武僧同行，且离家乡这么远，何其荣幸！~
 == Borelios
-~Indeed?~
+~当真？~
 == BYOSHIM
-~Indeed, friend. I have given up hope of seeing one of your kind away from Kara-Tur. All of the so-called "monks" I have encountered here are zealots, save you of course.~
+~当真，朋友。我已不指望在卡拉图之外见到你这类人。我在此遇到的所有所谓“武僧”都是狂信徒，当然除你之外。~
 == Borelios
-~Mastery of the self is often undertaken by the faithful. It is no weakness.~
+~对自身的精通，往往是虔信者的功课。那不是弱点。~
 == BYOSHIM
-~Ah, but I cannot truly understand them. And they make for such dire conversation!~
-= ~In my homeland, there are many such as yourself, largely unconcerned with the Gods, seeking enlightenment for its own sake.~
+~啊，可我真不懂他们。而且跟他们说话太难受了！~
+= ~我的故土有许多像你这样的人，多半不关心诸神，只为开悟本身而求开悟。~
 == Borelios
-~Remind you of them, do I?~
+~我让你想起他们了？~
 == BYOSHIM
-~The stillness with which you carry yourself does, yes. Your martial arts, however, lack in fluidity.~
+~你行走坐立的那份静，是的。不过你的武艺，少了些流转。~
 == Borelios
-~Have you pointers, then? Or is that some awkward jab?~
+~那你有指点？还是这只是句别扭的挖苦？~
 == BYOSHIM
-~I only jest, friend. Your style is strange to me, but effective enough. Come, next time we encounter something foolish enough to challenge us, I will show you how it is truly done!~
+~我只是说笑，朋友。你的路数对我来说怪，可够用。来，下次我们遇上胆敢挑衅我们的蠢货，我让你看看真该怎么做！~
 DO ~IncrementGlobal("PM_YoshimoGab","GLOBAL",1)~
 EXIT
 
@@ -1108,12 +1108,12 @@ See("PMOrel")
 !StateCheck("Yoshimo",CD_STATE_NOTVALID)
 Global("PM_YoshimoGab","GLOBAL",2)~
 THEN Borelios AudYosB2
-~Tell me more about the monks you spoke of from before, Yoshimo. Those from your homeland.~
+~吉见，再跟我说说你先前讲的那些武僧。你故土的那些。~
 == BYOSHIM ~What do you wish to know, specifically?~
 == Borelios ~Did you know any? Are they common?~
 == BYOSHIM ~They are not exactly common, though they are certainly more common than they are here, in this land.~
-= ~They are renowned and respected masters of the martial arts, both mental and physical. Many seek them out for their wisdom, though their monasteries are often difficult to access.~
-= ~As to whether I have known any, I did not have the fortune, no. Besides, I doubt they would have had the patience for such a rogue as myself.~
+= ~他们是武艺——心与身——上有名望、受人敬重的宗师。许多人求他们的智慧，不过他们的寺院往往不易进。~
+= ~至于我是否认识几位，我没那福气，没有。再说，我怀疑他们没耐心对付我这样的浪荡子。~
 == Borelios ~I would seek them out myself, had I no obligations. Perhaps one day I shall. You could accompany me, if you wished to. I imagine you miss your homeland as much as I do mine.~
 == BYOSHIM ~Ah, much as I appreciate the offer, one can never plan that far ahead. It would not surprise me if I never saw the shores of Kara-Tur again.~
 == Borelios ~That would be a shame. Well, I will leave the possibility open, if you will.~
@@ -1129,30 +1129,30 @@ See("Aerie")
 !StateCheck("Aerie",CD_STATE_NOTVALID)
 Global("PM_AerieGab","GLOBAL",1)~
 THEN Borelios AudAerB1
-~A beautiful <DAYNIGHTALL>, wouldn't you agree, young one?~
+~一个美丽的<DAYNIGHTALL>，你同意吗，小家伙？~
 == BAERIE
-~Hmm? Oh... Yes, I suppose so, Orelios.~
+~嗯？哦……是的，我想是吧，奥雷利奥斯。~
 == Borelios
-~I've seen you hang your head for some time now as we've traveled. Reminiscing over your life in the circus?~
+~我们一路走来，我看你低着头有些时候了。在回想你在马戏班的日子？~
 == BAERIE
-~How... how did you know that?~
+~你……你怎么知道？~
 == Borelios
-~Lucky guess. You should not be so sullen, travelling with <CHARNAME> is not so bad.~
+~侥幸猜中。你不该这么阴郁，跟<CHARNAME>同行不算太坏。~
 == BAERIE
-~I never said it was! And I can't help it, Orelios. Everything is just so... different here. I miss the excitement, that's all.~
+~我从没说不坏！可我也没法子，奥雷利奥斯。这里一切都那么……不同。我怀念那份兴奋，就这。~
 == Borelios
-~Ah, but adventuring brings its own excitements. They might not be constant, but you'll come to appreciate them.~
-= ~In the meantime, observe.~
+~啊，可冒险自有它的兴奋。也许不常在，可你会渐渐懂得欣赏。~
+= ~这当儿，看着。~
 == BAERIE
-~My! Do you always have those bags hidden in your sleeve?~
+~天哪！你总把这些袋子藏在袖子里吗？~
 == Borelios
-~Ah, young one, you should know better than to ask for such secrets.~
-= ~I took up juggling in my younger days. It helped to maintain my coordination and timing during long days spent languishing in the barracks.~
-= ~Then you get them all in the air at once, and!~
+~啊，小家伙，你该知道不该问这种秘密。~
+= ~我年轻时学耍球。在营房里闲熬的那些长日子里，它能让我保持身手协调与时准。~
+= ~然后你把它们一起抛到空中，再——~
 == BAERIE
-~Haha, bravo! Thank you, Orelios. It is not quite like home, but you have made me smile, at least.~
+~哈哈，好！谢谢你，奥雷利奥斯。这里虽不像家，可你至少让我笑了。~
 == Borelios
-~It was no trouble at all, Aerie.~
+~一点不费事，艾黎。~
 DO ~IncrementGlobal("PM_AerieGab","GLOBAL",1)~
 EXIT
 
@@ -1164,10 +1164,10 @@ See("Aerie")
 !StateCheck("Aerie",CD_STATE_NOTVALID)
 Global("PM_AerieGab","GLOBAL",2)~
 THEN BAERIE AudAerB2
-~Orelios, do you ever feel... strange?~
+~奥雷利奥斯，你有过……奇怪的感觉吗？~
 == Borelios ~In what way do you mean?~
 == BAERIE ~Well, it's just that... You are always under that heavy hood, even when the sun is shining, and you are always so still...~
-= ~I just wondered if... I wondered if people judged you.~
+= ~我只是想问问……我想问，别人会不会评判你。~
 == Borelios ~I'm sure that they do, but there is naught I can do about it.~
 == BAERIE ~Doesn't it bother you?~
 == Borelios ~Why should it? Those who would detest me on such things could hardly be pleased by any measure I might take to appease them. I would surely lose more than I would gain.~
@@ -1186,40 +1186,40 @@ See("Jan")
 !StateCheck("Jan",CD_STATE_NOTVALID)
 Global("PM_JanGab","GLOBAL",1)~
 THEN Borelios AudJanB1
-~Hmm, I still have yet to adjust to the breezes from the Shining Sea. I am accustomed to warmer winds of my home.~
+~嗯，我还是没习惯闪亮海来的风。我惯了我家乡更暖的风。~
 == BJAN
-~Ah, the Sea of Fallen Stars. I had a third cousin who sailed those parts, east of Westgate. Joskin the Soused, he liked to be called, but we in the family would call him "Josky". Term of endearment, you understand. Heard of him, by chance?~
+~啊，坠星海。我有个远房堂亲在那片海上行船，西门以东。他喜欢人叫他“醉鬼乔斯金”，可我们家里人叫他“乔斯基”。亲昵的叫法，你懂。碰巧听说过他吗？~
 == Borelios
-~No.~
+~没有。~
 == BJAN
-~Well, this was some years ago, you understand. Josky was renowned for his acumen in maritime business transactions, boarding ships at sea and bargaining for cargo -~
+~嗯，那是些年前的事了，你明白。乔斯基以他在海上买卖的精明闻名，登船议货——~
 == Borelios
-~He was a pirate, in other words.~
+~换句话说，他是个海盗。~
 == BJAN
-~Oh, Josky hated that term. Absolutely hated it. "I'm just cutting out the middleman!" he'd say. Josky always had a knack for business, or at least he liked to think so.~
+~哦，乔斯基恨这词。恨透了。“我不过是省掉了中间人！”他会说。乔斯基一向有做买卖的天分，至少他自己爱这么想。~
 == Borelios
-~Yes.~
+~是的。~
 == BJAN
-~Anywho, where was I? Oh right! They called him "Joskin the Soused" because his preferred area of trade was fine wine and spirits, you see. After every successful transaction he would reserve a casket for personal use and become completely useless for days, sometimes weeks.~
+~总之，我说到哪儿了？哦对！他们叫他“醉鬼乔斯金”，因为他偏好的买卖是美酒烈酿，你明白。每成一笔，他就留一箱自用，然后好几天，有时好几周，全然没用。~
 == Borelios
-~Naturally.~
+~自然。~
 == BJAN
-~Naturally. You may have noticed that I refer to dear Josky in the past tense. Well, he was idling just off the north coast of Turmish when he saw, and may the Gods strike me down if I be untrue -~
+~自然。你也许注意到我提亲爱的乔斯基用的是过去时。嗯，他正在图尔米什北岸外闲荡，那时他看见——若我说谎，愿诸神劈了我——~
 == Borelios
-~Please do.~
+~请便。~
 == BJAN
-~- he saw a real falling star! Fell into the water right next to his boat! Josky, who always had coin on the brain (and not just because of a nasty coffer explosion he got caught in during his adventuring days), dragged up the meteorite and cracked it open, hoping to find a fortune in ore.~
-= ~Much to his chagrin, however, it turned out to be a tanar'ri lord, encased in rock. Thing just popped open a gate to the Abyss and pulled Josky and his crew through with it! Never heard from him again.~
+~——他看见一颗真正的流星！正落在他船边的水里！乔斯基一向满脑子钱（也不全因为他冒险时被一场钱箱爆炸波及），把那陨石拖上来劈开，盼着从中得一笔矿财。~
+= ~可叫他懊恼的是，那里面竟是个塔纳里魔领主，封在石中。那东西一开就撕开通往深渊的门，把乔斯基和他一船人拖了进去！此后再没他的消息。~
 == Borelios
-~Of course.~
+~当然。~
 == BJAN
-~Left the boat, though, with all of Josky's prized liquor. When the thing washed up on the Turmish coast, the locals had themselves quite a party!~
-~Ah, memories. Eh, what was it that you were saying about the wind, Orelios?~
+~不过船留下了，还有乔斯基那些珍藏的酒。那船漂到图尔米什海岸时，当地人可热闹了一场！~
+~啊，往事。呃，你刚才说风什么来着，奥雷利奥斯？~
 == Borelios
-~Hrn... I seem to have forgotten.~
-= ~Away with you, gnome.~
+~嗯……我好像忘了。~
+= ~滚开吧，侏儒。~
 == BJAN
-~Until next time, dear friend!~
+~下回见，亲爱的朋友！~
 DO ~IncrementGlobal("PM_JanGab","GLOBAL",1)~
 EXIT
 
@@ -1232,27 +1232,27 @@ AreaType(OUTDOOR)
 !StateCheck("viconia",CD_STATE_NOTVALID)
 Global("BM_ViconiaGab","GLOBAL",1)~
 THEN Borelios AudVicB1
-~Despite the stares you draw, Viconia, I do not regret that <CHARNAME> spared you from death.~
+~维康妮亚，尽管你招人侧目，我并不后悔<CHARNAME>留你一命。~
 == BVICONI
-~Oh, I am so glad that I meet your approval, Orelios. You have some kernel of wisdom for me, no doubt.~
+~哦，我真高兴得了你的赞许，奥雷利奥斯。你必定有几句智慧的箴言给我。~
 == Borelios
-~I do not understand your hostility. Surely things would be easier for you if you were to be civil.~
+~我不懂你的敌意。你若和气些，事情对你必定容易得多。~
 == BVICONI
-~You are quick to presume. I can only be uncivil when the world around me has treated me in kind.~
+~你真会揣度。只有这周遭待我如彼，我才会如此不客气。~
 == Borelios
-~I can only imagine the strain of sustaining such constant contempt for others.~
+~我只能想象，长年对他人怀着这般轻蔑有多累。~
 == BVICONI
-~It is no strain, in fact it is quite natural. Life under the sun coddles rivvin such as yourself. The incessant cruelty of the Underdark quenches any desire for such pointless "civility".~
+~那不累，其实相当自然。阳光下的生活把你们这样的瑞文惯坏了。幽暗地域从不间断的残酷，熄灭了人对这种无谓“和气”的任何欲求。~
 == Borelios
-~That may be so, but you are no longer underground. I think you would find courtesy, if not respect, to be advantageous among the aboveground races.~
+~也许如此，可你已不在底下。我想你会发现，在地表诸族之间，礼数——即便不是敬重——是有利的。~
 == BVICONI
-~Pfeh, your words are hollow. Do you think yourself worldly, monk? What purpose does pandering to fools serve me? Do you think they would drop their prejudices for the slightest indulgence?~
+~呸，你的话空洞。你以为自己通世故吗，武僧？讨好蠢货于我何用？你以为他们会为一点小小的宽纵就放下偏见？~
 == Borelios
-~Those who would hate you, would hate you. But I wager you would find more allies than you might expect, were you to temper your anger, or at least mask your revulsion.~
+~要恨你的，总会恨你。可我敢说，你若能收敛怒气，或至少掩住厌恶，你会找到比预想更多的盟友。~
 == BVICONI
-~You know nothing. Less than nothing. Leave me be!~
+~你什么都不懂。比什么都不懂还不如。别烦我！~
 == Borelios
-~As you would have it.~
+~随你。~
 DO ~IncrementGlobal("BM_ViconiaGab","GLOBAL",1)~
 EXIT
 
@@ -1264,7 +1264,7 @@ See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 Global("PM_AnomenGab","GLOBAL",1)~
 THEN BANOMEN AudAnoB1
-~I must admit that I am uncomfortable traveling with a so-called warrior who refuses to take arms. Orelios, I would submit my services next time we come across a merchant. You must have some coin to spend, hmm? We must find a suitable weapon and a shirt of mail, before your foolishness results in your death or that of another within the group.~
+~我得承认，跟一个号称战士却不肯持械的人同行，我不舒服。奥雷利奥斯，下次遇到商人，我愿献上我的效劳。你总有些钱可花，嗯？我们得找件合用的武器和一件锁甲，免得你的愚行害死你自己或队里别人。~
 == Borelios ~It is no foolishness, sir. You have seen me in action.~
 == BANOMEN ~Yes, I have. I admit to being impressed by your swiftness and your unwillingness to disengage when outmatched, but your continued luck is surely limited. With a blade and plate, you would find your effectiveness increase exponentially, I am sure of it.~
 == Borelios ~Anomen, such trappings would only hamper me.~
@@ -1281,169 +1281,169 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrel25","GLOBAL",2)~
 THEN Borelios PMBantBa1
-~I have been contemplating this revelation of your purpose, <CHARNAME>. I wish to ask you about it, if you would indulge me.~
+~<CHARNAME>，我一直在想你这目的的启示。若你容我，我想问你。~
 DO ~SetGlobal("PMOrel25","GLOBAL",3)~
 END
-++ ~What do you wish to know?~ + PMBantBa1-1
-++ ~I do not wish to hear it. Leave me be.~ + PMBantEx1-1
+++ ~你想知道什么？~ + PMBantBa1-1
+++ ~我不想听。别烦我。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-1
-~It is evident that your life's journey is largely tied to your heritage as a progeny of Bhaal. As I'm sure you realize, this is as much opportunity as it is curse.~
-= ~So, <CHARNAME>, what is it that you intend to accomplish?~
+~显然，你的人生旅程大体系于你作为巴尔子嗣的血脉。你必定明白，这既是机缘，也是诅咒。~
+= ~那么，<CHARNAME>，你打算成就什么？~
 END
-++ ~My life has been nothing but ceaseless death. I wish to be rid of it, once and for all. And if I can bring some benevolence to this world in so doing, I will.~ + PMBantBa1-2
-++ ~I only want to live a life of my own choosing. I tire of fate pressing down upon me. Perhaps perserverance will bring my freedom.~ + PMBantBa1-3
-++ ~I strive to fulfill my fate. What good is this cursed blood if I refuse its divinity? To achieve Godhead... I will have greater than mortal legend, acquired greater treasure than the whole of Toril can offer.~ + PMBantBa1-4
-++ ~Leave me alone, Orelios. I do not desire to speak of such things, not now.~ + PMBantEx1-1
+++ ~我的人生除了无尽的死亡别无他物。我想一劳永逸地摆脱它。若借此能给这世界带来些善意，我会做。~ + PMBantBa1-2
+++ ~我只想按自己的选择过一生。我厌倦命运压在我身上。也许坚持能给我自由。~ + PMBantBa1-3
+++ ~我力求成就我的命数。我若拒其神性，这受咒的血又有何用？为登神……我将得超乎凡人传说的声名，取得托瑞尔全境都给不出的财宝。~ + PMBantBa1-4
+++ ~别烦我，奥雷利奥斯。我不想谈这些，不是现在。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-2
-~Because of your profession and because of your blood, senseless violence hounds you. How would you ensure a... positive net gain, so to speak?~
+~因为你这一行，也因为你的血，无谓的暴力总追着你。你要怎么确保一个……净收益是正的呢，这么说？~
 END
-++ ~That seems to be the question, does it not? But no, I am confident that I can bring right to this world. I will balance it, in time.~ + PMBantBa1-5
-++ ~My father tips the scales even in death, but "I" am no beacon of evil. The blood of Bhaal cannot restrain my righteousness. I refuse it.~ + PMBantBa1-6
-++ ~Can we just focus on the task at hand, right now?~ + PMBantEx1-1
+++ ~看来这就是问题了，不是吗？可不是，我有信心能给这世界带来正的东西。假以时日，我会让它持平。~ + PMBantBa1-5
+++ ~我父亲即便死了也在扳着天平，可“我”不是恶的灯塔。巴尔的血压不住我的义。我拒它。~ + PMBantBa1-6
+++ ~我们现在能不能先专心手头的事？~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-3
-~Is that even possible? Violence is infused into your very essence.~
+~那可能吗？暴力注在你的本质里。~
 END
-++ ~I have to believe it is. If I am going to weather this gauntlet, the power to do so will have come from within me.~ + PMBantBa1-7
-++ ~Stranger things have happened, no? Gods have been foiled before. I have to try.~ + PMBantBa1-6
-++ ~We shouldn't distract ourselves with talk like this. Let's get back to our journey.~ + PMBantEx1-1
+++ ~我不得不信它可能。若我要熬过这重重试炼，那份力量只能出自我的内里。~ + PMBantBa1-7
+++ ~更怪的事也发生过，不是吗？诸神也曾被挫败。我必须一试。~ + PMBantBa1-6
+++ ~我们不该拿这种话分心。回到我们的旅程吧。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-4
-~Ah, but there is much risk in this path. What if fate does not hold Godhood in your future? What if you lose all you hold dear? What if you are destroyed utterly?~
+~啊，可这条路风险极大。若命运的前方并非神位呢？若你失了你所珍视的一切呢？若你彻底被毁呢？~
 END
-++ ~Nothing ventured, nothing gained, friend. Would you not strive for the same rarefied prize?~ + PMBantBa1-8
-++ ~Everything is worth sacrificing for this. There is no greater reward in all the realms.~ + PMBantBa1-9
-++ ~Forget this. I'm finished talking.~ + PMBantEx1-1
+++ ~不入虎穴，焉得虎子，朋友。你不也会为同样的珍稀之赏去争吗？~ + PMBantBa1-8
+++ ~为这个，一切都值得牺牲。诸界之中没有更大的酬报了。~ + PMBantBa1-9
+++ ~算了。我不说了。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-5
-~Hmm, I see. Keep to that confidence and perhaps you will. It may take longer than you realize, however. There is much to answer for.~
+~嗯，我明白了。守住这份信心，也许你真能成。不过，这也许比你以为的要久。有许多要偿还的。~
 END
-++ ~What do you mean, "answer for"? I have asked for none of this. You know that as well as I, Orelios.~ + PMBantBa1-10
-++ ~However long it takes, that's how long I'll labor. It is only right.~ + PMBantBa1-6
-++ ~Forget this. We have more pressing matters to attend to.~ + PMBantEx1-1
+++ ~“偿还”是什么意思？这些都不是我要的。你我都清楚，奥雷利奥斯。~ + PMBantBa1-10
+++ ~不管要多久，我都会那样劳作。那才是对的。~ + PMBantBa1-6
+++ ~算了。我们有更要紧的事要办。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-6
-~Hmm, perhaps. That you seek to counterbalance the influence your father is good, at least.~
+~嗯，也许。你设法去平衡你父亲的影响，这至少是好的。~
 END
-++ ~As well I should! In a way I do not feel that my life truly reflects upon me. I have been thrust into this life. I lack the autonomy that would make me truly responsible for all this.~ + PMBantBa1-10
-++ ~Relax, Orelios. We'll handle whatever's waiting for us as best we can.~ + PMBantEx1-3
+++ ~我也该如此！在某种意义上，我不觉得这一生真能算在我头上。我是被推进这生活里的。我缺乏那份自主，能让我真正为此负责。~ + PMBantBa1-10
+++ ~放松，奥雷利奥斯。无论等着我们的是什么，我们都会尽力应付。~ + PMBantEx1-3
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-7
-~That much is true, I suppose. And it is good, I think, that you recognize your... latent power as an unfit tool to that end. Embrace of your heritage will only lead you further down this path.~
+~这话大体不差，我想。而我认为，你能看出自己那……潜在的力量并非达成此事的合用工具，这是好的。拥抱你的血脉只会让你在这条路上走得更远。~
 END
-++ ~Why would that be?~ + PMBantEx1-2
+++ ~那又为何？~ + PMBantEx1-2
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-8
-~I cannot say, as I am not in your position. But you should be cognizant of the risks you are running. More people than you know have their lives in your hands.~
+~我说不上，因为我不在你的位置。可你该意识到自己在冒的风险。比你所知更多的人，性命在你手里。~
 END
-++ ~I believe the reward will be worth it. Whatever losses I incur, the power I gain will be enough to protect more. Exponentially more.~ + PMBantBa1-11
-++ ~Hmph, if they lack the strength to take control of their own lives, then they are as good as forfeit. It is no matter.~ + PMBantBa1-9
+++ ~我相信酬报会值得。无论我受多少损失，我得的力量都足以护住更多人。护住多出数倍的人。~ + PMBantBa1-11
+++ ~哼，他们若没有力量掌控自己的人生，那就近乎自弃。那也无妨。~ + PMBantBa1-9
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-9
-~Do not be so cavalier about the lives of your comrades. They would lay down their lives for you, I'm sure. One ought to pay reverence to that loyalty.~
+~别对你的同伴性命这般洒脱。我确信他们愿为你舍命。人该敬那份忠。~
 END
-++ ~No one is stopping them from walking away.~ + PMBantEx1-3
-++ ~Perhaps. But if I play my cards right, I should be able to make few, if any, sacrifices.~ + PMBantEx1-4
+++ ~没人拦着他们走。~ + PMBantEx1-3
+++ ~也许。但我若牌打得好，该能少有牺牲，甚至没有。~ + PMBantEx1-4
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-10
-~Does it matter? Your hand, <CHARNAME>, is the one that strikes, and if the incidental violence itself is not your responsibility, the ways in which it affects the world are yours to control, ultimately.~
-= ~You will do no good in denying your complicity, forced as it may be. Neither will you do good in letting guilt paralyze you. The time to take stock is not now, perhaps, but I would keep it in mind, were I you.~
+~那要紧吗？<CHARNAME>，动手的是你的手；若那附带的暴力本身不归你负责，它影响世界的方式终究归你掌控。~
+= ~你否认自己的牵涉不会有什么好处，哪怕是被迫的。让愧疚把你瘫住也不会有什么好处。清点盘账的时候也许不是现在，可若我是你，我会记着。~
 END
-++ ~Perhaps you are right, Orelios. But I don't have to wait until this is over. As you say, the ultimate effects of my actions are mine to control. There are yet ways to steer my destiny.~ + PMBantEx1-5
-++ ~You are speaking nonsense. I had no intent to cause the harm I have and to blame me is to go beyond all reason.~ + PMBantEx1-6
-++ ~To be perfectly honest, by the time I'm through I don't imagine I'll be in a position to worry about some potential rebuke from my past.~ + PMBantEx1-12
+++ ~也许你说得对，奥雷利奥斯。可我不必等到这事结束。如你所说，我作为的终究影响归我掌控。仍有法子拨转我的命数。~ + PMBantEx1-5
+++ ~你在胡说。我无意造成我造成的伤害，怪我就是全无道理。~ + PMBantEx1-6
+++ ~说实话，等我做完，我想我不会还有心思去忧心过去某句可能的责难。~ + PMBantEx1-12
 
 CHAIN
 IF ~~ THEN Borelios PMBantBa1-11
-~I do not believe it truly wise to... bet against future earnings, as they would say in this land. Your comrades are not commodities to be expended in pursuit of your goals, they are ends in themselves. Their loss would not so easily be alleviated.~
+~我不信……拿未来的收益去赌，真算明智——这地方的人是这么说的。你的同伴不是为达成目的可耗的货物，他们本身就是目的。失去他们，不会那么容易弥补。~
 END
-++ ~No, that is true. I simply mean to imply that the potential benefits of taking my father's power are exceedingly great. Who's to say that such power could defy even death?~ + PMBantEx1-7
-++ ~Pah! They would use me for their own devices. Many have before. Why would I extend to them the courtesy they refuse me?~ + PMBantEx1-8
-++ ~Forget I said anything. Let's go.~ + PMBantEx1-1
+++ ~不，这是真的。我只是想说，取我父亲力量的潜在好处极大。谁说这样的力量不能连死亡都违抗？~ + PMBantEx1-7
+++ ~呸！他们会拿我去遂自己的意。许多人此前就这么做。我何必给他们他们不肯给我的礼数？~ + PMBantEx1-8
+++ ~当我没说。走吧。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-1
-~As you say. Come then.~
+~如你所说。那就来吧。~
 END
 ++ ~~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-2
-~Well, the temptation to use destructive power against itself is a strong one, but it is no more effective than fighting fire with fire.~
-= ~If you plan on extricating yourself from this mess, <CHARNAME>, then you will have to forsake your... promise. Eventually.~
+~嗯，以毁灭之力反制它自身的诱惑很强，可那跟以火攻火一样无效。~
+= ~你若打算从这烂摊子里脱身，<CHARNAME>，那你终将不得不弃掉你的……承诺。~
 END
-++ ~If that is what I must do, then so be it.~ + PMBantEx1-1
+++ ~若那是我必须做的，那就这样。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-3
-~Ah, but that does not mean they have brought some debt to you in their decision not to leave.~
+~啊，可他们决定不走，并不等于因此就对你欠下什么。~
 END
-++ ~Maybe not. I will have to think on your words.~ +PMBantEx1-1
-++ ~Hmph, so you say. I tire of this, let's focus ourselves on something else.~ + PMBantEx1-1
+++ ~也许不是。你这些话我得想想。~ +PMBantEx1-1
+++ ~哼，随你说。我腻了，我们专心别的。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-4
-~I do not think that will be possible. If you truly desire your father's power, then those around you will suffer. This is unavoidable.~
-= ~If that is your intent, you'd best ensure that they find your cause as worthwhile as you do.~
+~我不认为那可能。你若真想要你父亲的力量，那你身边的人就会受苦。这不可避免。~
+= ~若那是你的意图，你最好确保他们觉得你的事业如你一样值得。~
 END
-++ ~They know me, I'm sure they will. We have been through much.~ + PMBantEx1-11
-++ ~Would you find it worthwhile?~ + PMBantEx1-10
+++ ~他们懂我，我确信他们会。我们一起经过了许多。~ + PMBantEx1-11
+++ ~你会觉得值得吗？~ + PMBantEx1-10
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-5
-~I agree, to an extent. You keep a heartening perspective on this. Perhaps this will work out for the best.~
+~我在一定程度上同意。你对这事抱着一份让人振作的看法。也许这会有最好的结果。~
 END
-++ ~Perhaps so. But we should return to our task. We have talked enough.~ + PMBantEx1-1
+++ ~也许吧。可我们该回到正事。我们说够了。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-6
-~I do not think you are hearing me. But... it is no matter. What comes will come and I will aid you as I can. I only hope you come to realize the meaning in what I have said, <CHARNAME>.~
+~我不觉得你在听我。可……无妨。该来的会来，我会尽力助你。我只盼你能领会我这些话里的意思，<CHARNAME>。~
 END
-++ ~I wouldn't rule anything out, but I maintain that you have the wrong perspective on this. We'll talk more later, I'm sure.~ + PMBantEx1-1
-++ ~You are entirely too morose about everything, Orelios. Things will not be so bad, you'll see.~ + PMBantEx1-1
+++ ~我不排除任何可能，可我仍然认为你对这事的看法错了。以后再谈，我确信。~ + PMBantEx1-1
+++ ~你对什么事都太阴郁了，奥雷利奥斯。事情不会那么糟，你会看到。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-7
-~There are rules even the Gods must follow. As I said, it is unwise to assume that divinity would render you capable of anything. There are things that cannot be undone.~
+~连诸神也有必须守的规矩。如我所说，以为神性就能让你无所不能，是不智的。有些事无法挽回。~
 END
-++ ~I suppose you are right about that. I'll do my best not to take these things too lightly.~ + PMBantEx1-1
-++ ~I understand, but there's no use handwringing over these things. If we fall, we fall.~ + PMBantEx1-1
+++ ~我想这点你说得对。我会尽量不把这类事看得太轻。~ + PMBantEx1-1
+++ ~我明白，可为这些事绞手也没用。若我们倒了，那就倒了。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-8
-~Ah, but we are your friends, are we not? We may have asked your aid from time to time, but we have repaid those debts in service, many times over. It is not so cruel an arrangement as you suggest.~
+~啊，可我们是你的朋友，不是吗？我们也许不时求过你相助，可我们在效力中已多次还清那些债。这安排并不像你说的那么冷酷。~
 END
-++ ~Hmph, if you say so. We'll see if you all are still behind me when things become truly difficult.~ + PMBantEx1-11
-++ ~This is always the way it has always been. I keep you all around because it suits me, that's all.~ + PMBantEx1-12
+++ ~哼，随你说。等事情真变难时，我们再看你们是不是还站在我身后。~ + PMBantEx1-11
+++ ~事情一向如此。我留你们在身边，只是因为合我的意，仅此。~ + PMBantEx1-12
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-10
-~I know full well what I have brought myself into. I have made a decision and shall see it through to the end.~
+~我完全清楚自己卷进了什么。我已做了决定，会走到尽头。~
 END
-++ ~I appreciate that, Orelios. We will accomplish much, just you wait.~ + PMBantEx1-1
-++ ~Good. I'm glad SOMEONE around here knows their place.~ + PMBantEx1-1
+++ ~我领这份情，奥雷利奥斯。我们会成就许多，你等着。~ + PMBantEx1-1
+++ ~好。我很高兴这儿总算有人知道自己的位置。~ + PMBantEx1-1
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-11
-~Indeed, we shall see.~
+~确实，我们会看到。~
 END
 ++ ~~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios PMBantEx1-12
-~Indeed? Expect this to be a difficult path, then.~
+~当真？那就预备好走一条难路吧。~
 END
 ++ ~~ EXIT
 
@@ -1454,50 +1454,50 @@ InParty(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("PMOrelTalk","GLOBAL",6)~
 THEN Borelios OrelBant4
-~It is good to be traveling once more. It reminds me of my time in the Army of the Lion, back home.~
+~又能上路真好。它让我想起在家时狮子军中的日子。~
 DO ~SetGlobal("PMOrelTalk","GLOBAL",7) SetGLOBAL("PMOrelSpy","GLOBAL",2)~
 END
-IF ~~ THEN REPLY ~How did you end up serving?~ GOTO OrelBant4-1
-IF ~~ THEN REPLY ~I'm not particularly interested in talking at the moment.~ GOTO OrelBant4-2
+IF ~~ THEN REPLY ~你怎么会去服役的？~ GOTO OrelBant4-1
+IF ~~ THEN REPLY ~我这会儿不太想谈。~ GOTO OrelBant4-2
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-1
-~There wasn't much of a choice, really. Service is compulsory for all Aglarondans, once they reach adulthood. I served in protecting the Northeastern border with Thay, as my parents did and as my daughter does now.~
+~其实没多少选择。阿格拉隆德人一到成年，服役就是义务。我在东北边境防萨伊，如我父母当年，也如我女儿如今。~
 END
-IF ~~ THEN REPLY ~What was life like in the Aglarondan army?~ GOTO OrelBant4-3
-IF ~~ THEN REPLY ~See any combat?~ GOTO OrelBant4-4
+IF ~~ THEN REPLY ~阿格拉隆德军中的生活是什么样？~ GOTO OrelBant4-3
+IF ~~ THEN REPLY ~见过战阵吗？~ GOTO OrelBant4-4
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-2
-~That's quite alright.~ EXIT
+~那就不提了。~ EXIT
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-3
-~Honestly? I was happy. Regimented life suited my temperament. While I was stationed at Emmech I met my wife and started a family. We hadn't suffered a Thayan invasion in my lifetime, so no one looked askance at us. That was twenty years ago.~
+~说实话？我那时是快乐的。军旅的章法合我的性情。我驻在艾梅克时遇见了我妻子，成了家。我有生之年没遭过萨伊入侵，所以没人对我们侧目。那是二十年前。~
 END
-IF ~~ THEN REPLY ~What changed? Something must have, if you're here now.~ GOTO OrelBant4-5
+IF ~~ THEN REPLY ~什么变了？既然你如今在此，必定有什么变了。~ GOTO OrelBant4-5
 
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-4
-~Not for most of my career. Thay had not openly attacked for a generation by the time I enlisted. We lived normal lives. We had families, we grew comfortable. We knew it wasn't meant to last, but we made the most of it.~
+~我大半的军旅生涯都没有。我入伍时，萨伊已有一代人未曾明攻。我们过正常的日子。我们成家，渐渐安适。我们知道这不会长久，可我们尽量过好。~
 END
-IF ~~ THEN REPLY ~Thay attacked, I take it?~ GOTO OrelBant4-5
+IF ~~ THEN REPLY ~我猜萨伊来攻了？~ GOTO OrelBant4-5
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-5
-~My children grew up, that's all.~
+~我的孩子长大了，仅此而已。~
 END
-IF ~~ THEN REPLY ~Yes, fascinating, but I still don't understand - how is it that you were once a mage but no longer?~ GOTO OrelBant4-6
+IF ~~ THEN REPLY ~是的，有意思，可我还是不明白——你怎么曾是个法师，如今却不是了？~ GOTO OrelBant4-6
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-6
-~It's a long story, <CHARNAME>, and I've already rambled on enough for one day. We will talk more soon, but I wish to know something before we focus on the task at hand. Why did you begin adventuring? What drew you to it?~
+~那是个长故事，<CHARNAME>，我今天已经絮叨得够多了。我们不久再谈，不过在专心手头的事之前，我想知道一件事。你当初为什么开始冒险？是什么把你引去的？~
 END
-IF ~~ THEN REPLY ~I was orphaned and barred from my home when I had just come of age. There was really nothing else for me to do.~ GOTO OrelBant4-7
-IF ~~ THEN REPLY ~My foster father, Gorion, was murdered as we were traveling outside Baldur's Gate. Until I was kidnapped and brought to Athkatla, my purpose was to bring revenge to the man who murdered him.~ GOTO OrelBant4-7
+IF ~~ THEN REPLY ~我刚成年就成了孤儿，被逐出家门。我实在没别的可做。~ GOTO OrelBant4-7
+IF ~~ THEN REPLY ~我们的养父葛立安在我们行到博德之门外时被杀了。直到我被绑来阿斯卡特拉，我的目的都是找杀他的人复仇。~ GOTO OrelBant4-7
 
 CHAIN
 IF ~~ THEN Borelios OrelBant4-7
-~Hmm, I see. The circumstances you have found yourself in are most harsh. That you still survive, triumph even, speaks to your resilience. Not many could have faced what you have.~
-= ~Come, let us return to our journey. I'll take point this time, yes?~ EXIT
+~嗯，我明白了。你所处的境况极为严酷。你仍能活下来、甚至得胜，说明你的韧性。没有多少人能面对你所面对的。~
+= ~来，回到我们的旅程。这回我来走前头，好吗？~ EXIT

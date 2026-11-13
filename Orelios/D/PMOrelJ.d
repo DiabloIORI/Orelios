@@ -2,282 +2,282 @@ BEGIN PMOrelJ
 
 INTERJECT_COPY_TRANS FIRKRA01 1 PMOrelFirk
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~There is something about this man... I have not seen him here before, but he exhibits none of the latent anxiety that the hedonistic nobles here do. Odd.~
+~这人身上有些东西……我此前没见过他，可他丝毫未显这儿的享乐贵族那种潜藏的焦躁。怪了。~
 END
 
 INTERJECT_COPY_TRANS RENAL 22 PMOrelRenal
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Rooting out subterfuge in the guild of thieves. How ironic.~
+~在盗贼公会里挖阴谋。何其讽刺。~
 END
 
 
 INTERJECT_COPY_TRANS ARAN 49 PMOrelAran1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Hmph. Promises make debts, and from debts spring promises. No doubt this payoff is the first favor among many.~
+~哼。承诺生出债务，债务又生出承诺。这报酬无疑是许多个人情里的第一份。~
 END
 
 INTERJECT_COPY_TRANS BEELOO 1 PMOrelBeeloo1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~More of them. Wonderful.~
+~又是些这种东西。真好。~
 END
 
 INTERJECT_COPY_TRANS2 HAEGAN 1 PMOrelSlaver1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Be resigned to death, scum. Even the vermin shall repulse from your corpse.~
+~认命受死吧，渣滓。连虫豸也会从你的尸体上退避。~
 END
 
 INTERJECT_COPY_TRANS2 HAEGAN 2 PMOrelSlaver2
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Be resigned to death, scum. Even the vermin shall repulse from your corpse.~
+~认命受死吧，渣滓。连虫豸也会从你的尸体上退避。~
 END
 
 INTERJECT_COPY_TRANS2 HAEGAN 3 PMOrelSlaver3
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Be resigned to death, scum. Even the vermin shall repulse from your corpse.~
+~认命受死吧，渣滓。连虫豸也会从你的尸体上退避。~
 END
 
 INTERJECT_COPY_TRANS2 HAEGAN 5 PMOrelSlaver4
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Be resigned to death, scum. Even the vermin shall repulse from your corpse.~
+~认命受死吧，渣滓。连虫豸也会从你的尸体上退避。~
 END
 
 INTERJECT_COPY_TRANS HENDAK 19 PMOrelHendak1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~There is no greater blight on civilization than slavery. We should bring justice to these people with all haste.~
+~没有比奴役更大的文明之祸了。我们该尽快为这些人带来正义。~
 END
 
 INTERJECT_COPY_TRANS2 RUFPAL2 5 PM_RUFPAL2-1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~As dull as these louts are, the ringleader seems rather sure of himself. I hope you know what you're doing, <CHARNAME>.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~这帮蠢货虽然迟钝，那头目倒颇为自信。我希望你知道自己在做什么，<CHARNAME>。~
 END
 
 INTERJECT_COPY_TRANS KALAH2 7 PM_KALAH2-1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Hmph. Hard as others may have been towards him, it was his desire for their affirmation that led him to this point. What a sorry soul.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~哼。不管别人待他多刻薄，正是他渴求他们的认可，才把他带到这一步。可怜的人。~
 END
 INTERJECT_COPY_TRANS KALAH2 8 PM_KALAH2-1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Hmph. Hard as others may have been towards him, it was his desire for their affirmation that led him to this point. What a sorry soul.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~哼。不管别人待他多刻薄，正是他渴求他们的认可，才把他带到这一步。可怜的人。~
 END
 
 INTERJECT_COPY_TRANS KALAH2 9 PM_KALAH2-1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Hmph. Hard as others may have been towards him, it was his desire for their affirmation that led him to this point. What a sorry soul.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~哼。不管别人待他多刻薄，正是他渴求他们的认可，才把他带到这一步。可怜的人。~
 END
 
 INTERJECT_COPY_TRANS2 HENDAK 1 PM_HENDAK1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~The proprietor of this place does not see fit to hire skilled guardsmen... Were we to free these men I have no doubt they would gain the upper hand quickly. I would encourage you to aid this man's escape, but I leave the choice to you.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~这地方的东家竟不觉得该雇几个像样的守卫……若我们放了这些人，我毫不怀疑他们很快就能占上风。我会劝你助这人逃走，但选择留给你。~
 END
 
 INTERJECT_COPY_TRANS2 SEWERM1 23 PM_SEWERM1-23
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Fascinating... What spirit would possess a man for so long in such a state?~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~有意思……是什么心气让一个人长时间停在那种状态？~
 END
 
 INTERJECT_COPY_TRANS2 VICONI 2 PM_VICONI2
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~If you trust this woman, <CHARNAME>, I am unopposed to her traveling with us. She certainly wouldn't make the group any stranger than it already is.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~你若信得过这女人，<CHARNAME>，我不反对她随我们同行。她当然不会让这队伍比现在更怪。~
 END
 
 INTERJECT_COPY_TRANS2 TOLGER 75 PM_TOLGER7
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~The veneer of respect for law and order this man wears is parchment-thin. If he does not respect you enough to fairly establish an agreement, then he cannot have any intention of keeping to it.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~这人身上那层敬重法度的皮，薄如羊皮纸。他若不够尊重你、不肯公平立约，那就是根本不打算守约。~
 END
 
 INTERJECT_COPY_TRANS2 INSPECT 13 PM_INSPECT13
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Perhaps the question to ask is why the murderer doesn't target merchants, or nobles... Such crimes would surely bring much greater attention. There is sense in this senselessness. Be wary, <CHARNAME>. I suspect we are witnessing something much more sinister than simple bloodlust.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~也许该问的是：凶手为何不下手商人、贵族……那样的罪行必会引来更大关注。这无章法之中是有章法的。小心，<CHARNAME>。我猜我们面对的东西，比单纯的嗜血阴毒得多。~
 END
 
 INTERJECT_COPY_TRANS2 FIRKRA02 21 PM_FIRKRA02-21
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Much as I imagine you might want to reject this invitation, I would remind you that discretion is the better part of valor... We should at least rest and prepare if we are to take on such a formidable task as slaying this wyrm.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我想你大概很想拒绝这邀请，可我提醒你：谨慎乃勇武之要……若要去屠这样一条巨龙，我们至少该先歇息、做好准备。~
 END
 
 INTERJECT_COPY_TRANS2 RYLOCK 24 PM_RYLOCK24
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~It seems one cannot engage in a good deed without being mired in drudgery. Let's get this over with, shall we?~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~看来人行善举也难免陷进苦差。我们快点办完，好吗？~
 END
 
 INTERJECT_COPY_TRANS2 LUSETTE 11 PM_LUSETTE11
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~That was an awfully great amount of scheming for a killing I'm sure we would have gladly provided had we been asked.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~为了一场杀戮，这算计未免太多了——我确信，若他们开口，我们本会乐意代劳。~
 END
 
 INTERJECT_COPY_TRANS2 EDWIN 8 PM_EDWIN8
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Attacking a mage in his own home is... not the smartest plan. But we're going to accomplish much more difficult things in the future, I imagine. I suggest you take this opportunity to prepare against whatever spells he may employ.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~在法师自己家里攻击他……不是最聪明的打算。不过我想，往后我们要做更难的事。建议你借此机会，为他可能施的法术做些防备。~
 END
 
 INTERJECT_COPY_TRANS2 EMBARL 6 PM_EMBARL6
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Perhaps not the choice I would have made, but I'm sure it will suit our ends in any event.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~也许不是我会做的选择，但我确信无论如何都合我们的目的。~
 END
 
 INTERJECT_COPY_TRANS2 EDWIN 26 PM_EDWIN26
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Thayan loyalty, in all its splendor.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~萨伊式的忠诚，真是风采毕现。~
 END
 
 INTERJECT_COPY_TRANS2 EDWIN 30 PM_EDWIN30
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~I recognize that a Thayan spellcaster would be useful to the group, but you should be cognizant of potential conflicts within it. Things may become... heated.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我承认，一个萨伊施法者对队伍有用，可你该留意队伍内部的潜在冲突。事情可能变得……火热。~
 END
 
 INTERJECT_COPY_TRANS2 RIFTG03 7 PM_RIFTG03-7
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~I imagine if one were to live forever they would be well disposed to shy away from such eternal oaths. They assume a... state of suspension that is unlikely to hold.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我想，人若真要永生，就该远离这种永久的誓约。它们假定了一种……悬而不决的状态，而那很难维持。~
 END
 
 INTERJECT_COPY_TRANS2 GAAL 23 PM_GAAL23
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~You have gambled and lost. Accept your fate, fool.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~你赌了，也输了。接受你的命吧，蠢货。~
 END
 
 INTERJECT_COPY_TRANS2 GAAL 4 PM_GAAL4
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~What purpose would accruing a cult in Athkatla hold, for a beholder? Surely it must realize the attention it would attract from those who oppose it.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~一个眼魔在阿斯卡特拉聚起教团，能有什么目的？它总该想到，这会引来反对者的注意。~
 END
 
 INTERJECT_COPY_TRANS2 GAELAN 66 PM_GAELAN66
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~This thief may be slippery, but I do not doubt his words... If we are to find Imoen and Irenicus, we will need to leverage the influence of the Shadow Thieves.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~这贼也许滑不留手，可我不怀疑他的话……若我们要找到爱蒙与爱瑞尼克斯，就得借影贼的势力。~
 END
 
 INTERJECT_COPY_TRANS2 PPSAEM 59 PM_PPSAEM59
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~You would make deals with these creatures? You truly are a fool.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~你竟要跟这些生物做交易？你真是蠢。~
 END
 
 INTERJECT_COPY_TRANS2 PPCOWLED 1 PM_PPCOWLED1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~There is something wrong with this man... Steel yourself, this may be another trap.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~这人有什么不对……振作起来，这可能是又一个陷阱。~
 END
 
 INTERJECT_COPY_TRANS2 PPAPHRIL 4 PM_PPAPHRIL4
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~To see through the planes, and unable to turn away... I can only imagine the terror she must feel.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~能看穿诸界，却无法移开目光……我只能想象她有多恐惧。~
 END
 
 INTERJECT_COPY_TRANS2 PPAPHRIL 5 PM_PPAPHRIL5
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~To see through the planes, and unable to turn away... I can only imagine the terror she must feel.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~能看穿诸界，却无法移开目光……我只能想象她有多恐惧。~
 END
 
 INTERJECT_COPY_TRANS2 PPAPHRIL 6 PM_PPAPHRIL6
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~To see through the planes, and unable to turn away... I can only imagine the terror she must feel.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~能看穿诸界，却无法移开目光……我只能想象她有多恐惧。~
 END
 
 INTERJECT_COPY_TRANS2 YOSHJ 113 PM_YOSHJ13
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~We called you friend, Yoshimo... There is no baser treachery. We shall not forget.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我们曾称你为友，吉见……没有比这更卑劣的背叛。我们不会忘记。~
 END
 
 INTERJECT_COPY_TRANS2 PPSAEM2 19 PM_PPSAEM2-19
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Whether or not you wish to rely on this fool is your choice, but know that if he so readily betrayed us before, he will be quick to do so again.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~你是否要靠这蠢货，是你的事；但要知道，他既然先前就这么轻易背叛我们，再背叛也会同样迅速。~
 END
 
 INTERJECT_COPY_TRANS2 PPSAEM3 1 PM_PPSAEM3-1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Villainy that was asked for, no doubt.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~毫无疑问，这是自找的恶行。~
 END
 
 INTERJECT_COPY_TRANS2 SCSARLES 11 PM_SCSARLES11
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Hmph. One would think that there be better uses for our time than to facilitate such decadence.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~哼。人总该想想，我们的时间该有比促成这种堕落更好的用处。~
 END
 
 INTERJECT_COPY_TRANS DELCIA 0 PM_DELCIA1
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~There is a refreshing lack of such entitled fools where I come from. It's enough to make me wonder why I left. Momentarily, at least.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我来的地方，这种自以为天经地义的蠢人少得令人爽快。这足以让我纳闷自己为何离开——至少有那么一刻。~
 END
 
 INTERJECT_COPY_TRANS DELCIA 17 PM_DELCIA2
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~There is a refreshing lack of such entitled fools where I come from. It's enough to make me wonder why I left. Momentarily, at least.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我来的地方，这种自以为天经地义的蠢人少得令人爽快。这足以让我纳闷自己为何离开——至少有那么一刻。~
 END
 
 INTERJECT_COPY_TRANS2 KAYL2 10 PM_KAYL2-10
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~As it should be, I would think... If a life of sworn discipline and piety is to serve anyone or anything, it must demand absolutely from its adherents.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~我想本该如此……若一条誓守戒律与虔信的生活要服务于任何人或事，它就必须向信众索取绝对。~
 END
 
 INTERJECT_COPY_TRANS2 RAELIS 2 PM_RAELIS2
-== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~Amn finds markets even from the planes, it seems.~
+== PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN ~看来安姆连诸界之中也做买卖。~
 END
 
 INTERJECT_COPY_TRANS ILBEGG01 4 PMOrelBeggar1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~That was a benevolent gesture, but a gesture nonetheless. There are better ways to provide for the disadvantaged, even if they are less direct.~
+~那是善意的举动，可仍只是个举动。帮助困苦者有更好的办法，即便不那么直接。~
 END
 
 INTERJECT_COPY_TRANS BHOISIG 19 PMOrelHoisig
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Practitioners of many faiths undergo rites of endurance... But to permanently blind oneself to prove devotion? We should use caution, <CHARNAME>. These people are clearly beyond sanity.~
+~许多信仰的修行者都会受忍耐的试炼……可为了证明虔诚而让自己永久失明？我们该谨慎，<CHARNAME>。这些人显然已失了理智。~
 END
 
 INTERJECT_COPY_TRANS BHARVAL 17 PMOrelArval
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Practitioners of many faiths undergo rites of endurance... But to permanently blind oneself to prove devotion? We should use caution, <CHARNAME>. These people are clearly beyond sanity.~
+~许多信仰的修行者都会受忍耐的试炼……可为了证明虔诚而让自己永久失明？我们该谨慎，<CHARNAME>。这些人显然已失了理智。~
 END
 
 INTERJECT_COPY_TRANS BHNALLA 16 PM_BHNALLA16
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Practitioners of many faiths undergo rites of endurance... But to permanently blind oneself to prove devotion? We should use caution, <CHARNAME>. These people are clearly beyond sanity.~
+~许多信仰的修行者都会受忍耐的试炼……可为了证明虔诚而让自己永久失明？我们该谨慎，<CHARNAME>。这些人显然已失了理智。~
 END
 
 INTERJECT_COPY_TRANS BHNALLA 16 PMOrelNalla
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Practitioners of many faiths undergo rites of endurance... But to permanently blind oneself to prove devotion? We should use caution, <CHARNAME>. These people are clearly beyond sanity.~
+~许多信仰的修行者都会受忍耐的试炼……可为了证明虔诚而让自己永久失明？我们该谨慎，<CHARNAME>。这些人显然已失了理智。~
 END
 
 INTERJECT_COPY_TRANS C6REGIS1 2 PMOrelDrizzt
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~We have found ourselves in the presence of Drizzt Do'Urden, <CHARNAME>... Unless there is another scimitar-wielding drow that I am unaware of.~
+~我们面前的是崔斯特·杜垩登，<CHARNAME>……除非还有另一个使弯刀的卓尔我不知道。~
 END
 
 INTERJECT_COPY_TRANS VICG1 4 PMOrelVicBurn
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Such vigilantism is... vulgar, to say the least. If you intend to rescue this drow, you best do it quickly, and prepare to fight these madmen.~
+~这种自行执法……往轻里说，是粗俗的。你若打算救这卓尔，最好快些，并做好与这些疯子交战的准备。~
 END
 
 INTERJECT_COPY_TRANS SEWSW 4 PMOrelSewPuz
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Hm, had I known there were such oddities so close to the Copper Coronet, I would have made the trip myself.~
+~嗯，我若早知道铜冠酒馆附近有这种怪事，我自己就会来一趟。~
 END
 
 INTERJECT_COPY_TRANS SUAVATAR 5 PMOrelSuldYak2
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~He seeks to... <CHARNAME>, this cannot be allowed. We must end this, even if it takes our dying breath to do so.~
+~他想……<CHARNAME>，这不能容许。我们必须了结此事，哪怕要拼上最后一口气。~
 END
 
 INTERJECT_COPY_TRANS SUDEMIN 11 PMOrelSuldYak1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~That is an understatement. Extinguishing his life would avenge countless wrongs, it seems.~
+~那是轻描淡写。看来取他性命能报无数冤仇。~
 END
 
 INTERJECT_COPY_TRANS UHMAY01 18 PMOrelUHInt1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Ogres are not known for their subtlety... That there is any mystery here at all casts doubt upon the prospect of their complicity.~
+~食人魔不以精细著称……这里居然还有什么谜团，反倒让人怀疑他们是否真的同谋。~
 END
 
 INTERJECT_COPY_TRANS UHOGRE01 10 PMOrelUHInt2
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~This creature has wilfully turned from its violent nature - I think that is deserving of consideration. But it is your choice.~
+~这生物已执意背离自己的凶暴本性——我认为这值得考虑。但这是你的选择。~
 END
 
 INTERJECT_COPY_TRANS HELLJON 7 PMOrelEndGame
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~We have labored long enough for this reckoning. There is one life left for us to take. Come, Jon Irenicus. The Abyss awaits you!~
+~我们为这一场清算辛苦太久了。还剩一条命要取。来吧，琼·爱瑞尼克斯。深渊在等你！~
 END
 
 INTERJECT_COPY_TRANS HELLJON 8 PMOrelEndGame
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~We have labored long enough for this reckoning. There is one life left for us to take. Come, Jon Irenicus. The Abyss awaits you!~
+~我们为这一场清算辛苦太久了。还剩一条命要取。来吧，琼·爱瑞尼克斯。深渊在等你！~
 END
 
 INTERJECT_COPY_TRANS HELLJON 9 PMOrelEndGame
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~We have labored long enough for this reckoning. There is one life left for us to take. Come, Jon Irenicus. The Abyss awaits you!~
+~我们为这一场清算辛苦太久了。还剩一条命要取。来吧，琼·爱瑞尼克斯。深渊在等你！~
 END
 
 INTERJECT_COPY_TRANS HELLJON 10 PMOrelEndGame
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~We have labored long enough for this reckoning. There is one life left for us to take. Come, Jon Irenicus. The Abyss awaits you!~
+~我们为这一场清算辛苦太久了。还剩一条命要取。来吧，琼·爱瑞尼克斯。深渊在等你！~
 END
 
 INTERJECT_COPY_TRANS UDARDUL 14 PMOrelUndD1
 == PMOrelJ IF ~InParty("PMOrel") InMyArea("PMOrel")~ THEN
-~Truly, we are naught but instruments to these drow. The sooner we slaughter these monsters, the sooner we shall be free from this woman's cruel whims.~
+~真要说，我们对这些卓尔不过是工具。我们越早屠了这些怪物，就越早摆脱这女人残酷的任性。~
 END
 
 INTERJECT PLAYER1 33 PMOrelTreeOfLife
 == PLAYER1 IF ~IsValidForPartyDialog("PMOrel") Global("PMOrelSpy","GLOBAL",2)~ THEN
-~Orelius, calm and reserved, the Aglarondan spy sent to investigate you and your kin. He seems to have thrown his lot in with yours, despite the risk. He meets your gaze and nods.~
+~奥雷利奥斯，沉静而克制，是被派来调查你与你族人的阿格拉隆德密探。看来他冒着风险把命运押在了你们这边。他迎上你的目光，点了点头。~
 END
-++ ~Orelius, you have a family waiting for you back in Aglarond. If you come with me, there is no guarantee you will return.~ EXTERN PMOrelJ Option1
-++ ~Are you ready for this?~ EXTERN PMOrelJ Option2
+++ ~奥雷利奥斯，阿格拉隆德还有家人在等你。你若跟我走，没有人能保证你能回来。~ EXTERN PMOrelJ Option1
+++ ~你准备好了吗？~ EXTERN PMOrelJ Option2
 
 APPEND PMOrelJ
 IF ~~ THEN BEGIN Option1
-SAY ~I expect no guarantees from you, <CHARNAME>. The only certainty is death. I have lived a long life, and I do not fear it.~
-= ~That said, I'll do my best to ensure that if anyone meets their end today, it will be Irenicus.~ COPY_TRANS PLAYER1 33
+SAY ~我不指望你给我任何保证，<CHARNAME>。唯一的确定是死亡。我已活得够久，不怕它。~
+= ~话虽如此，我会尽力确保今天若有人丧命，那人是爱瑞尼克斯。~ COPY_TRANS PLAYER1 33
 END
 
 IF ~~ THEN BEGIN Option2
-SAY ~Of course. I am ready when you are.~
-= ~We will take back what is yours by right.~ COPY_TRANS PLAYER1 33
+SAY ~当然。你准备好时，我也准备好了。~
+= ~我们会把属于你的东西夺回来。~ COPY_TRANS PLAYER1 33
 END
 END
 

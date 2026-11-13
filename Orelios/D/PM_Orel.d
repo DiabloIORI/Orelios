@@ -1,146 +1,146 @@
 BEGIN PMOrel
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN Intro0
-SAY ~Is there a single room in this inn that adventurers will not barge into?~
-IF ~~ THEN REPLY ~Excuse me?~ GOTO Intro1
-IF ~~ THEN REPLY ~No need to get sore. I'm leaving.~ EXIT
+SAY ~这旅店里就没有一间房是冒险者不会闯进来的吗？~
+IF ~~ THEN REPLY ~抱歉，什么？~ GOTO Intro1
+IF ~~ THEN REPLY ~不必动怒，我这就走。~ EXIT
 END
 
 IF ~~ THEN BEGIN Intro1
-SAY ~You are an adventurer, aren't you? You certainly have the manners of one. Did you need something?~
-IF ~~ THEN REPLY ~Just exploring these back rooms. Who might you be?~ GOTO Intro6
-IF ~~ THEN REPLY ~You would do well to watch your tone around me, stranger. I'll do what I like, understand?~ GOTO Intro7
+SAY ~你是冒险者，对吧？你的礼数一看就是。你有事吗？~
+IF ~~ THEN REPLY ~只是逛逛这些后屋。阁下是哪位？~ GOTO Intro6
+IF ~~ THEN REPLY ~你最好注意跟我说话的口气，陌生人。我想做什么就做什么，明白吗？~ GOTO Intro7
 END
 
 IF ~~ THEN BEGIN Intro2
-SAY ~"Don't mean to pry"? Truly? Ah, no matter. Well met then, <CHARNAME>, but again I must ask you: What is it that you need? I was enjoying the solitude. Figuratively speaking.~
-IF ~~ THEN REPLY ~I was wondering more about you, actually. I don't know many people who would find a place like this relaxing, and your clothing is... unusual.~ GOTO Intro3
-IF ~~ THEN REPLY ~I was hoping that you might be able to tell me about something.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Nothing at present. I'll take my leave of you.~ EXIT
+SAY ~“不想多嘴打听”？当真？唉，无妨。那么，幸会，<CHARNAME>，不过我还是要问：你到底要什么？我正享受着独处。打个比方而已。~
+IF ~~ THEN REPLY ~其实我更想多了解你。我不认识多少人会觉得这种地方让人放松，而你的穿着……很特别。~ GOTO Intro3
+IF ~~ THEN REPLY ~我本希望你能告诉我一些事情。~ GOTO CCQuery
+IF ~~ THEN REPLY ~眼下没有。我告辞了。~ EXIT
 END
 
 IF ~~ THEN BEGIN Intro3
-SAY ~I suppose that is fine enough. What interests you, specifically?~
-IF ~~ THEN REPLY ~What is it that you do, exactly? Your manner of dress is unlike any I have seen here.~ GOTO Selfgab1
-IF ~~ THEN REPLY ~Where are you from? I have not been in Athkatla long, yet you still do not strike me as a native of Amn.~ GOTO Selfgab2
-IF ~~ THEN REPLY ~Actually, let me ask you about something else.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Nevermind, I must leave.~ EXIT
+SAY ~那也够了。具体是什么引起你的兴趣？~
+IF ~~ THEN REPLY ~你到底是做什么的？你的穿着我在此地从未见过。~ GOTO Selfgab1
+IF ~~ THEN REPLY ~你是哪里人？我在阿斯卡特拉待得不久，可你仍不像安姆本地人。~ GOTO Selfgab2
+IF ~~ THEN REPLY ~其实，让我问点别的。~ GOTO CCQuery
+IF ~~ THEN REPLY ~算了，我得走了。~ EXIT
 END
 
 IF ~~ THEN BEGIN Intro4
-SAY ~Hmm?~
-IF ~~ THEN REPLY ~I was wondering more about you.~ GOTO Intro3
-IF ~~ THEN REPLY ~I was hoping that you might be able to tell me about something.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Farewell.~ EXIT
+SAY ~嗯？~
+IF ~~ THEN REPLY ~我想多了解你一些。~ GOTO Intro3
+IF ~~ THEN REPLY ~我本希望你能告诉我一些事情。~ GOTO CCQuery
+IF ~~ THEN REPLY ~告辞。~ EXIT
 END
 
 IF ~NumTimesTalkedToGT(0)~ THEN BEGIN Intro5
-SAY ~You're back, I see. What do you require?~
-IF ~~ THEN REPLY ~I wanted to talk about you.~ GOTO Intro3
-IF ~~ THEN REPLY ~I was hoping that you might be able to tell me about something.~ GOTO CCQuery
-IF ~~ THEN REPLY ~If you're in need of some excitement, I'm looking for people to join my group.~ GOTO Join1
-IF ~~ THEN REPLY ~Nothing right now. I'll take my leave of you.~ EXIT
+SAY ~你又回来了。你需要什么？~
+IF ~~ THEN REPLY ~我想谈谈你。~ GOTO Intro3
+IF ~~ THEN REPLY ~我本希望你能告诉我一些事情。~ GOTO CCQuery
+IF ~~ THEN REPLY ~你若想找点刺激，我正在找人加入我的队伍。~ GOTO Join1
+IF ~~ THEN REPLY ~现在没什么。我告辞了。~ EXIT
 END
 
 IF ~~ THEN BEGIN Intro6
-SAY ~I could ask you the same question, couldn't I? Hmm, very well. I go by Orelios.~
-= ~I must say I wasn't really expecting an interrogation today. I assume you have a name?~
-IF ~~ THEN REPLY ~<CHARNAME>. Well met. I don't mean to pry, but you seem a bit too put-together to be lounging about in a den of vice.~ GOTO Intro2
+SAY ~我也可以问你同样的问题，不是吗？嗯，好吧。我叫奥雷利奥斯。~
+= ~我得说，我今天可没料到会被审问。我猜你有名字吧？~
+IF ~~ THEN REPLY ~<CHARNAME>。幸会。我不想多嘴，可你看上去太齐整了，不像是会在这种藏污纳垢之处闲坐的人。~ GOTO Intro2
 END
 
 IF ~~ THEN BEGIN Intro7
-SAY ~My apologies, <PRO_SIRMAAM>, it was simply a momentary lapse in judgment. Let's not remain strangers, hmm? Who might you be?~
-IF ~~ THEN REPLY ~My name is <CHARNAME>, and I have questions that need answering.~ GOTO Intro3
-IF ~~ THEN REPLY ~None of your business. I'm through with you.~ EXIT
+SAY ~恕我失礼，<PRO_SIRMAAM>，那只是一时判断失当。我们别做陌生人了，好吗？阁下是哪位？~
+IF ~~ THEN REPLY ~我叫<CHARNAME>，我有问题要问。~ GOTO Intro3
+IF ~~ THEN REPLY ~不关你的事。我跟你没什么好说的了。~ EXIT
 END
 
 IF ~~ THEN BEGIN Selfgab1
-SAY ~I am a soldier by blood but a warrior ascetic by trade, if you could call that a trade. The colloquial term is "monk", I believe, though there are certainly monks who do not cultivate skills such as mine.~
-IF ~~ THEN REPLY ~I'm afraid I don't follow you. A soldier by blood?~ GOTO Selfgab3
-IF ~~ THEN REPLY ~And what skills are those?~ GOTO Selfgab4
-IF ~~ THEN REPLY ~You're not from around here, are you? Where do you come from?~ GOTO Selfgab2
-IF ~~ THEN REPLY ~If you've nothing better to do, I could use one such as you at my side. Care to join me in my travels?~ GOTO Join1
-IF ~~ THEN REPLY ~Interesting. Let me ask you about something else.~ GOTO CCQuery
-IF ~~ THEN REPLY ~I see. I must go, I may return later. Farewell.~ EXIT
+SAY ~我血里是军人，行当上却是武士苦修者——如果你把这称作行当的话。俗话叫“武僧”，我想；不过也确实有武僧不修我这样的技艺。~
+IF ~~ THEN REPLY ~恕我跟不上。血里是军人？~ GOTO Selfgab3
+IF ~~ THEN REPLY ~那是什么技艺？~ GOTO Selfgab4
+IF ~~ THEN REPLY ~你不是本地人吧？你从哪儿来？~ GOTO Selfgab2
+IF ~~ THEN REPLY ~你若没别的要紧事，我身边正用得上你这样的人。愿意随我同行吗？~ GOTO Join1
+IF ~~ THEN REPLY ~有趣。让我问点别的。~ GOTO CCQuery
+IF ~~ THEN REPLY ~明白了。我必须走了，也许稍后再来。告辞。~ EXIT
 END
 
 IF ~~ THEN BEGIN Selfgab2
-SAY ~No, that is true, I am a foreigner in this land. I hail from Aglarond, far to the East across the Sea of Fallen Stars. I embarked on my journey here nearly a year and a half ago, but I have only been here in Athkatla for roughly a month's time.~
-IF ~~ THEN REPLY ~What about your profession? What do you do?~ GOTO Selfgab1
-IF ~~ THEN REPLY ~I see. Tell me about something else.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Wait here, I shall return.~ EXIT
+SAY ~不，确实如此，我在这片土地上是外乡人。我来自阿格拉隆德，在坠星海对岸极东之处。我近一年半前启程来此，可在阿斯卡特拉只待了约一个月。~
+IF ~~ THEN REPLY ~你的行当呢？你做什么？~ GOTO Selfgab1
+IF ~~ THEN REPLY ~明白了。跟我说点别的。~ GOTO CCQuery
+IF ~~ THEN REPLY ~在此等我，我会回来。~ EXIT
 END
 
 IF ~~ THEN BEGIN Selfgab3
-SAY ~My father and mother both served in the defense of Aglarond, first under Queen Ilione and then under the Symbul, who rules today. I followed their path for a time, but no longer.~
-IF ~~ THEN REPLY ~I see. You mentioned having skill as a warrior, earlier. What skills do you possess?~ GOTO Selfgab4
-IF ~~ THEN REPLY ~I was wondering about something else.~ GOTO Intro3
-IF ~~ THEN REPLY ~I would have use for one such as you. Would you consider joining me?~ GOTO Join1
+SAY ~我父亲与母亲都曾在阿格拉隆德守土效力，先是在伊莉奥娜女王麾下，后在今日执政的辛布尔麾下。我曾循他们的路走了一段，但已不再。~
+IF ~~ THEN REPLY ~明白了。你先前提到自己有战士的技艺。你会些什么？~ GOTO Selfgab4
+IF ~~ THEN REPLY ~我想问点别的。~ GOTO Intro3
+IF ~~ THEN REPLY ~我正用得上你这样的人。你可愿意加入我？~ GOTO Join1
 END
 
 IF ~~ THEN BEGIN Selfgab4
-SAY ~As an ascetic, I have chosen to forgo the use of traditional armor and rely primarily on my own body to meet my enemies in battle, though I can use certain weapons if the situation truly calls for them. An ascetic's life is denial and self-discipline, and there is a... special sort of power that one derives from such things.~
-IF ~~ THEN REPLY ~"Special power"? That sounds exciting. Tell me more about that.~ GOTO Selfgab5
-IF ~~ THEN REPLY ~You sound quite capable. What would you say if I asked you to join my group?~ GOTO Join1
-IF ~~ THEN REPLY ~Wait here, I shall return.~ EXIT
+SAY ~身为苦修者，我选择不用传统铠甲，主要凭自己的肉身在战斗中迎敌，不过若情势真正需要，我也能用某些武器。苦修者的生活就是弃绝与自律，而从这类事中，人能得一种……特别的力量。~
+IF ~~ THEN REPLY ~“特别的力量”？听着让人兴奋。多说些。~ GOTO Selfgab5
+IF ~~ THEN REPLY ~你听着相当能干。我若邀你加入我的队伍，你怎么说？~ GOTO Join1
+IF ~~ THEN REPLY ~在此等我，我会回来。~ EXIT
 END
 
 IF ~~ THEN BEGIN Selfgab5
-SAY ~It is called "Ki". With it I can will myself to move with great speed, avoid injury, exploit weaknesses in my enemies, and even heal bodily wounds. All I have to do is concentrate. But I am not a berserker - I am most effective when exercising precision and strategy in battle.~
-IF ~~ THEN REPLY ~Hmm, I see. I could make good use of such abilities. Would you consider joining me on my travels?~ GOTO Join1
-IF ~~ THEN REPLY ~Tell me about something else.~ GOTO Intro3
+SAY ~那叫“气”。凭它，我能让自己疾行、避伤、窥破敌人破绽，甚至治愈肉身之伤。我只需凝神。可我不是狂战士——我最有效的战法是持重与谋略。~
+IF ~~ THEN REPLY ~嗯，明白了。我这些本事能派上大用。你可愿意随我同行？~ GOTO Join1
+IF ~~ THEN REPLY ~跟我说点别的。~ GOTO Intro3
 END
 
 IF ~~ THEN BEGIN Join1
-SAY ~You ask that of random people you meet? Ah, I suppose I have spent enough time in this place. Why? What would you have me assist you in doing?~
-IF ~~ THEN REPLY ~I am pursuing a mad archmage named Irenicus. He has kidnapped my foster sister Imoen, and I intend to rescue her from his cruelty.~ GOTO Accept1
-IF ~~ THEN REPLY ~A mage named Irenicus has attacked and provoked me. I intend to exact vengeance upon him.~ GOTO Accept2
-IF ~~ THEN REPLY ~Ah, nevermind. I may return, wait here.~ EXIT
+SAY ~你对随便遇到的人就这样开口？唉，我想我在这地方待得够久了。为什么？你要我协助你做什么？~
+IF ~~ THEN REPLY ~我在追一个疯癫的大法师，名叫爱瑞尼克斯。他绑走了我义妹爱蒙，我要把她从他的残暴中救出来。~ GOTO Accept1
+IF ~~ THEN REPLY ~一个名叫爱瑞尼克斯的法师袭击并挑衅了我。我要向他复仇。~ GOTO Accept2
+IF ~~ THEN REPLY ~唉，算了。我也许会再来，在此等我。~ EXIT
 END
 
 IF ~~ THEN BEGIN Accept1
-SAY ~A worthy goal, I suppose. I will aid you in saving this Imoen. Lead on.~
-IF ~~ THEN REPLY ~Alright, we're off.~ DO
+SAY ~我想，这是个值得的目标。我会助你救出这位爱蒙。带路吧。~
+IF ~~ THEN REPLY ~好，我们出发。~ DO
 ~SetGlobal("OreliusJoinrf","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN Accept2
-SAY ~If what you say is true, I am not unopposed to helping you seek your revenge. Lead on.~
-IF ~~ THEN REPLY ~Alright, we're off.~ DO
+SAY ~你若所言属实，我不反对助你复仇。带路吧。~
+IF ~~ THEN REPLY ~好，我们出发。~ DO
 ~SetGlobal("OreliusJoinrf","LOCALS",1) JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN CCQuery
-SAY ~What do you wish to know?~
-IF ~~ THEN REPLY ~I'm looking to buy some... Special equipment. Do you know a place where that would be possible?~ GOTO CCDuh1
-IF ~~ THEN REPLY ~Have you any suggestions for gainful adventure in these parts?~ GOTO CCDuh2
-IF ~~ THEN REPLY ~Actually, let's talk about something else.~ GOTO Intro4
-IF ~~ THEN REPLY ~Farewell.~ EXIT
+SAY ~你想知道什么？~
+IF ~~ THEN REPLY ~我想买些……特别的装备。你知道哪里能办到吗？~ GOTO CCDuh1
+IF ~~ THEN REPLY ~这附近有什么能挣钱的冒险，你有建议吗？~ GOTO CCDuh2
+IF ~~ THEN REPLY ~其实，我们谈点别的。~ GOTO Intro4
+IF ~~ THEN REPLY ~告辞。~ EXIT
 END
 
 IF ~~ THEN BEGIN CCDuh1
-SAY ~This is Amn, merchants are thick on the ground. Bernard here at the Copper Coronet has many things for sale, and the Adventurer's Mart at Waukeen's Promenade is one of the better-stocked outfitters that I've encountered in my travels, though I have little need for it. If you're looking for exotic equipment, there is a woman on the second floor of the Adventurer's Mart who sells such things. Bring as much coin as you can carry.~
-IF ~~ THEN REPLY ~Thanks. I had more questions about Athkatla.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Interesting. Let's talk about something else.~ GOTO Intro4
+SAY ~这里是安姆，商人遍地。铜冠酒馆的伯纳德这儿有许多东西可买，沃金步道的冒险者市场是我行旅中所见存货较好的装备店之一，虽然我用不上。你若想找奇珍装备，冒险者市场二楼有个女人卖这类东西。带上你能扛得动的金币。~
+IF ~~ THEN REPLY ~多谢。我还有关于阿斯卡特拉的问题。~ GOTO CCQuery
+IF ~~ THEN REPLY ~有趣。我们谈点别的。~ GOTO Intro4
 END
 
 IF ~~ THEN BEGIN CCDuh2
-SAY ~Since arriving here I haven't done much in the way of adventuring. I do not care to court danger alone if I can avoid it. I have noticed, however, a lot of strange commotion coming from the end of this hallway, and I believe there's an entrance to the sewers of the slums close by. There should be all manner of danger there.~
-= ~Beyond that, I have repeatedly noticed some fairly rough-hewn people moving about the streets at night whilst paying my respects to the Gods in the Temple District. I suspect that a curious adventurer might find a den of illicit activities in the area, were they to search thoroughly enough. Perhaps in one of the manses, there.~
-IF ~~ THEN REPLY ~Thanks. I had more questions about Athkatla.~ GOTO CCQuery
-IF ~~ THEN REPLY ~Interesting. Let's talk about something else.~ GOTO Intro4
+SAY ~到此之后我没怎么做冒险的事。能避则避，我不愿独自招惹危险。不过我注意到，这走廊尽头常有许多奇怪的动静，我相信附近有通往贫民区下水道的入口。那里该有各式各样的危险。~
+= ~此外，我在神殿区敬神时，屡屡注意到有些相当粗野的人夜里在街上走动。我猜，一个好奇的冒险者只要搜得够仔细，就能在这片地方找到一处行不法之事的巢穴。也许就在那边某座宅院里。~
+IF ~~ THEN REPLY ~多谢。我还有关于阿斯卡特拉的问题。~ GOTO CCQuery
+IF ~~ THEN REPLY ~有趣。我们谈点别的。~ GOTO Intro4
 END
 
 BEGIN PMOrelP
 
 IF ~Global ("OreliusJoinrf","LOCALS",1)~ THEN BEGIN LeaveGroup
-SAY ~Is our time at an end, then? I shall stay here, if so. I have much to meditate over.~
-IF ~~ THEN REPLY ~Not yet. You should stay.~ DO ~JoinParty()~ EXIT
-IF ~~ THEN REPLY ~For a time, perhaps. I will return if I have need of you.~ DO ~SetGlobal("OreliusJoinrf","LOCALS",0)~ EXIT
+SAY ~那我们的缘分就到头了？若是如此，我就留在此地。我有许多要冥想。~
+IF ~~ THEN REPLY ~还不是。你该留下。~ DO ~JoinParty()~ EXIT
+IF ~~ THEN REPLY ~也许留一段时间。我若需要你，会回来。~ DO ~SetGlobal("OreliusJoinrf","LOCALS",0)~ EXIT
 END
 
 IF ~Global("OreliusJoinrf","LOCALS",0)~ THEN BEGIN ComeBack
-SAY ~You have returned, I see. Do you require my aid once more?~
-IF ~~ THEN REPLY ~Yes. Join us once more.~ DO ~SetGlobal("OreliusJoinrf","LOCALS",1) JoinParty()~ EXIT
-IF ~~ THEN REPLY ~Not at present. Stay here.~ EXIT
+SAY ~你又回来了。还需要我相助吗？~
+IF ~~ THEN REPLY ~是。再入队吧。~ DO ~SetGlobal("OreliusJoinrf","LOCALS",1) JoinParty()~ EXIT
+IF ~~ THEN REPLY ~眼下不用。留在此地。~ EXIT
 END

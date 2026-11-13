@@ -19,50 +19,50 @@ END
 BEGIN ~Orelios NPC~
 
 COPY ~Orelios/Misc/PM_Orel.cre~ ~override~
-SAY NAME1 ~Orelios~
-SAY NAME2 ~Orelios~
-SAY BIO ~When asked about his past, Orelios states that he is a native of the city of Veltalar in Aglarond, far to the East across the Sea of Fallen Stars. He says that he made the journey to Amn about a year and a half before your meeting. He left home after years spent in the Aglarond army and the coming of age of his two daughters, though he does not go into detail about them or how he made the transition from soldier to adventurer. It was apparently a long journey, as he has only been in Athkatla for some months. His demeanor is one of deep calm but also fine control. On the rare occasion that his face shows emotion, it is slight, and he has not raised his voice at any point during your travels together. As you travel, he scans his surroundings, as if compiling some inscrutable mental catalogue.~
-SAY MORALE ~I can do no more. I flee.~
-SAY HAPPY ~I am most contented with the actions of this group.~
-SAY UNHAPPY_ANNOYED ~You must think before you act.~
-SAY UNHAPPY_SERIOUS ~Be forewarned, I can scarcely abide more of this recklesness.~
-SAY UNHAPPY_BREAKING ~I have reached my end. I hope you find some sense in my absence.~
-SAY LEADER ~I would be honored.~ [PM_Orelb]
-SAY TIRED ~There is no more to be gained this day. Let us retire.~ [PM_Orelc]
-SAY BORED ~Why must we kill time when we can use it to our advantage?~ [PM_Oreld]
-SAY BATTLE_CRY1 ~Gods grant me strength.~ [PM_Orela]
-SAY BATTLE_CRY2 ~To victory.~ [PM_Orel8]
-SAY BATTLE_CRY3 ~To victory.~ [PM_Orel8]
-SAY BATTLE_CRY4 ~Gods grant me strength.~ [PM_Orela]
-SAY DAMAGE ~Hrk!~ [PM_Orell]
-SAY DYING ~Ah!~ [PM_Orelm]
-SAY HURT ~I fear I am wounded.~ [PM_Orele]
-SAY AREA_FOREST ~I am almost reminded of the Yuirwood. Forests do not suit me.~
-SAY AREA_CITY ~Ah, the city... Remember to center yourself here, or you may be driven to distraction.~
-SAY AREA_DUNGEON ~Stay calm and watch your surroundings. There is little that can harm us if we are prepared.~
-SAY AREA_DAY ~Beautiful day, hmm? The sun's warmth is welcome.~
-SAY AREA_NIGHT ~I always preferred the quiet of night, even with its dangers.~
-SAY SELECT_COMMON1 ~How can I help?~ [PM_Orelf]
-SAY SELECT_COMMON2 ~How can I serve?~ [PM_Orelg]
-SAY SELECT_COMMON3 ~Yes?~ [PM_Orelh]
-SAY SELECT_COMMON4 ~Speak your mind.~ [PM_Orelx]
-SAY SELECT_COMMON5 ~Yes?~ [PM_Orelh]
-SAY SELECT_COMMON6 ~How can I help?~ [PM_Orelf]
-SAY SELECT_ACTION1 ~Of course.~ [PM_Oreli]
-SAY SELECT_ACTION2 ~It shall be done.~ [PM_Orelk]
-SAY SELECT_ACTION3 ~Very well.~ [PM_Orelj]
-SAY SELECT_ACTION5 ~Agreed.~ [PM_Orels]
-SAY SELECT_ACTION6 ~At once.~ [PM_Orelt]
-SAY SELECT_ACTION7 ~Onward.~ [PM_Orelu]
-SAY REACT_TO_DIE_GENERAL ~I shall see to it that you are buried, with honor.~ [PM_Orelw]
-SAY SELECT_RARE1 ~Speak your mind, then leave quickly.~ [PM_RARE1]
-SAY SELECT_RARE2 ~I pray your childish mind will soon turn toward other amusements.~ [PM_RARE2]
-SAY CRITICAL_HIT ~Yield!~ [PM_Orelz]
-SAY CRITICAL_MISS ~Blast it.~
-SAY TARGET_IMMUNE ~I cannot overcome this defense.~
-SAY HIDDEN_IN_SHADOWS ~Forward.~ [PM_Orel5]
-SAY SPELL_DISRUPTED ~My concentration has broken.~
-SAY INVENTORY_FULL ~My strength has reached its limit, I can carry no more.~
+SAY NAME1 ~奥雷利奥斯~
+SAY NAME2 ~奥雷利奥斯~
+SAY BIO ~被人问及过往时，奥雷利奥斯说自己是阿格拉隆德维塔拉城人氏，该城远在坠星海对岸的东方。他说他是在与你相遇约一年半前来安姆的。他在阿格拉隆德军中度了多年，两个女儿也长大成人之后才离乡，只是他不曾细说她们，也不曾说自己是怎样从军人转为冒险者的。那显然是段很长的旅程，因为他到阿斯卡特拉才几个月。他的气度是深沉的平静，却也有精到的自持。他脸上难得显情，即便显也极轻，你们同行至今他从未抬高过嗓门。行路时他总在扫视周遭，仿佛在心里编着一册莫测的目录。~
+SAY MORALE ~我只能做这么多了。我逃。~
+SAY HAPPY ~我对这队伍所为十分满意。~
+SAY UNHAPPY_ANNOYED ~行事之前须先思量。~
+SAY UNHAPPY_SERIOUS ~我先提醒你，这样的鲁莽我再也受不了多少。~
+SAY UNHAPPY_BREAKING ~我已到了极限。希望你在我走后能想明白些。~
+SAY LEADER ~那是我的荣幸。~ [PM_Orelb]
+SAY TIRED ~今日再无可得。我们歇息吧。~ [PM_Orelc]
+SAY BORED ~既然能把时间用在有利之处，何必空耗？~ [PM_Oreld]
+SAY BATTLE_CRY1 ~愿诸神给我力气。~ [PM_Orela]
+SAY BATTLE_CRY2 ~为了胜利。~ [PM_Orel8]
+SAY BATTLE_CRY3 ~为了胜利。~ [PM_Orel8]
+SAY BATTLE_CRY4 ~愿诸神给我力气。~ [PM_Orela]
+SAY DAMAGE ~呃！~ [PM_Orell]
+SAY DYING ~啊！~ [PM_Orelm]
+SAY HURT ~恐怕我受伤了。~ [PM_Orele]
+SAY AREA_FOREST ~我几乎想起尤尔林了。林地不合我。~
+SAY AREA_CITY ~啊，城市……记得在此凝神，否则你难免被分神。~
+SAY AREA_DUNGEON ~保持镇定，留意四周。只要我们有所准备，能伤我们的很少。~
+SAY AREA_DAY ~好天气，嗯？日头暖和，叫人受用。~
+SAY AREA_NIGHT ~我一向更喜欢夜的安静，即便它有危险。~
+SAY SELECT_COMMON1 ~我能帮什么？~ [PM_Orelf]
+SAY SELECT_COMMON2 ~我该如何效劳？~ [PM_Orelg]
+SAY SELECT_COMMON3 ~是的？~ [PM_Orelh]
+SAY SELECT_COMMON4 ~有话直说。~ [PM_Orelx]
+SAY SELECT_COMMON5 ~是的？~ [PM_Orelh]
+SAY SELECT_COMMON6 ~我能帮什么？~ [PM_Orelf]
+SAY SELECT_ACTION1 ~当然。~ [PM_Oreli]
+SAY SELECT_ACTION2 ~会办成的。~ [PM_Orelk]
+SAY SELECT_ACTION3 ~很好。~ [PM_Orelj]
+SAY SELECT_ACTION5 ~同意。~ [PM_Orels]
+SAY SELECT_ACTION6 ~立刻。~ [PM_Orelt]
+SAY SELECT_ACTION7 ~前行。~ [PM_Orelu]
+SAY REACT_TO_DIE_GENERAL ~我会确保你得到体面的安葬。~ [PM_Orelw]
+SAY SELECT_RARE1 ~有话就说，说完快走。~ [PM_RARE1]
+SAY SELECT_RARE2 ~我盼你那孩子气的心智能早些转向别的消遣。~ [PM_RARE2]
+SAY CRITICAL_HIT ~降服吧！~ [PM_Orelz]
+SAY CRITICAL_MISS ~该死。~
+SAY TARGET_IMMUNE ~我破不了这防御。~
+SAY HIDDEN_IN_SHADOWS ~前进。~ [PM_Orel5]
+SAY SPELL_DISRUPTED ~我的专注被打断了。~
+SAY INVENTORY_FULL ~我的力气到了限，扛不动更多了。~
 
 COMPILE ~Orelios/D/PM_Orel.d~
 COMPILE ~Orelios/D/BOrelios.d~
@@ -88,13 +88,13 @@ COPY_EXISTING ~songlist.2da~ ~override~
 SET_2DA_ENTRY 0 2 3 ~PM_BLANK.MUS~
 
 COPY ~Orelios/spells/PMarmor.spl~ ~override~
-SAY NAME1 ~Denial of Harm~
+SAY NAME1 ~拒伤~
 
 COPY ~Orelios/spells/PMmirro.spl~ ~override~
-SAY NAME1 ~Denial of Sight~
+SAY NAME1 ~拒视~
 
 COPY ~Orelios/spells/PMdecei.spl~ ~override~
-SAY NAME1 ~Denial of Deceit~
+SAY NAME1 ~拒诈~
 
 COPY ~Orelios/spells/PMmagic.spl~ ~override~
-SAY NAME1 ~Denial of Magic~
+SAY NAME1 ~拒法~
